@@ -1,0 +1,23 @@
+<?php
+return [
+  'notification_creation_user' => 'Пользователь',
+  'notification_creation_header' => 'Заголовок',
+  'notification_creation_message' => 'Сообщение',
+  'notification_creation_template' => 'Сообщение',
+  'notification_creation_fromModule' => 'Тип события',
+  'notification_creation_roles' => 'Роли',
+  'notification_creation_notificationType' => 'Метод уведомления',
+  'notification_creation_isImportant' => 'Важное уведомление',
+  'notification_creation_isNews' => 'Новость',
+  'notification_creation_isDisabled' => 'Выключено',
+  'notification_creation_isSystem' => 'Системное',
+  'notification_creation_isReplace' => 'Заменить предыдущее уведомление',
+  'notification_creation_isReplace_hint' => 'Заменить предыдущее браузерное уведомление такого же типа, если оно не прочитано, иначе создать новое',
+  'notification_creation_isSend' => 'Отправлено',
+  'notification_creation_from' => 'От',
+  'emails_hint' => 'Введите емейлы через запятую',
+  'notification_creation_created' => 'Дата создания',
+  'notification_creation_updated' => 'Дата обновления',
+  'notification_creation_viewed' => 'Прочитано',
+  'notification_creation_manual' => 'Ручное',
+];

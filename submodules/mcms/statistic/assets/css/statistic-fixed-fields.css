@@ -1,0 +1,170 @@
+/* Подготовка страницы для работы с большими таблицами */
+.table-responsive {width:100%;}
+.actions-wrapper {margin: 0;}
+.actions-wrapper .actions-buttons {right: 15px;}
+#content    .container-fluid {padding: 0 !important}
+.wrap>.container-fluid.container-admin {width: 100% !important;}
+table.dataTable {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.dataTables_scrollBody {border-bottom: 0;}
+.dataTables_scrollBody tfoot tr {
+    height: 0 !important;
+    border-top: none;
+}
+
+.dataTables_scrollBody i[class*="icon-"] {font-size: 10px;}
+
+.table-striped > tbody > tr:nth-of-type(odd) {background: transparent;}
+.dataTables_scrollBody>table tr:hover{
+    background: linear-gradient(to top, #ccc 0%, rgba(200,200,200,0.1) 3%, rgba(200,200,200,0.1) 98%, #ccc 100%);
+}
+.dataTables_scrollBody>table tr:only-child:hover{background: transparent}
+
+
+.dataTables_scrollBody table {overflow: hidden;}
+.dataTables_scrollBody tbody td {position: relative;}
+.dataTables_scrollBody tbody td:hover:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5000px;
+    z-index: -1;
+    width: 100%;
+    height: 10000px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: rgba(200,200,200,0.1);
+}
+.dataTables_scroll      {position: relative;}
+.dataTables_scrollBody,
+.dataTables_scrollFoot {
+    position: initial !important;
+}
+.dataTables_scrollBody td:first-child:after {display: none !important;}
+
+
+table.dataTable.table-condensed>thead>tr>th,
+.dataTables_scroll tfoot td:first-child {
+    padding: 5px 15px;
+}
+
+.dataTables_scroll * {border-color: rgba(221,221,221,0.4);}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tbody > tr > td{border-color: #eee;}
+.table-bordered > tfoot > tr > th,
+.dataTables_scroll .table-bordered > tfoot > tr > td {border-color: rgba(221,221,221,0);}
+.dataTables_scroll .dataTables_scrollHeadInner {border-bottom: 1px solid #999;margin-top: 0 !important;}
+.dataTables_scroll .dataTables_scrollHeadInner thead tr th {border-top: 1px solid #999; border-bottom: 0px;}
+.dataTables_scroll .dataTables_scrollHeadInner thead tr th.fixed-left-columns {border-top: 0px;}
+.dataTables_scroll .dataTables_scrollHeadInner thead tr>* {border-right: 1px solid #999;border-bottom: 0px;}
+.dataTables_scroll .dataTables_scrollHeadInner thead tr:first-child>*:first-child{border-right-color: transparent;}
+.dataTables_scroll .dataTables_scrollFootInner {border-top: 1px solid #999;}
+.dataTables_scrollBody tbody tr td.fixed-left-columns {box-shadow: -1px -1px #ddd inset;}
+
+
+
+.dataTables_scroll .dataTables_scrollHead {
+    position: initial !important;
+}
+
+.pos_fixed_top .dataTables_scroll tr th:first-child{
+    position: fixed !important;
+    left: 0;
+}
+.pos_fixed_bottom tfoot tr td:first-child{
+    position: fixed !important;
+    left: 0;
+}
+#jarviswidget-fullscreen-mode .dataTables_scrollFoot {
+    position: fixed !important;
+    bottom: 0;
+    z-index: 200;
+}
+
+
+/* Начало стилей со стрелками */
+.dataTables_scroll .sorting_1 {
+    background: rgba(0,200,0,0.1);
+}
+.dataTables_scroll .sorting_1:first-child {
+    background: #efefef;
+}
+.dataTables_scroll th [aria-sort]>* {
+    position: relative;
+}
+
+.dataTables_scroll .dataTables_scrollHeadInner th[aria-sort]:after {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 33px;
+    top: 0;
+    right: 0;
+    font-size: 17px;
+    color: #333;
+}
+.dataTables_scroll .dataTables_scrollHeadInner th[aria-sort]:first-child:after {top: 15px;}
+.dataTables_scroll .dataTables_scrollHeadInner th.sorting:after{content: none;}
+.dataTables_scroll .dataTables_scrollHeadInner th.sorting_asc:after{content: ''}
+.dataTables_scroll .dataTables_scrollHeadInner th.sorting_desc:after{content: ''}
+
+/*smartAdmin fix*/
+#statistic-data-table_wrapper div.dataTables_scrollBody .table-condensed.table>thead>tr>th,
+#statistic-data-table_wrapper .dataTables_scrollBody thead td,
+#statistic-data-table_wrapper .dataTables_scrollBody tfoot td,
+.DTFC_LeftBodyLiner .table-condensed.table>thead>tr>th {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#statistic-data-table_wrapper .dataTables_scroll .table-condensed.table>thead>tr>th,
+#statistic-data-table_wrapper .dataTables_scroll .table-condensed.table>tbody>tr>td {
+    padding: 5px 20px !important;
+}
+
+#jarviswidget-fullscreen-mode .jarviswidget > div {
+    position: fixed;
+    top: 34px;
+    z-index: 201;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc:after {
+    content: '';
+}
+
+.DTFC_LeftWrapper {
+    top: 1px !important;
+}
+
+.DTFC_LeftWrapper table.dataTable tbody tr td {
+    background-color: #efefef;
+    box-shadow: -1px -1px #ddd inset;
+}
+
+.DTFC_LeftWrapper table.dataTable thead tr th,
+.DTFC_LeftWrapper table.dataTable tfoot tr td {
+    background-color: #eeeeee;
+    border-right: none;
+}
+
+#statistic-data-table_wrapper .DTFC_LeftWrapper table.dataTable thead > tr > th {
+    border-right: 1px solid #999 !important;
+}
+
+.dataTables_scroll table.dataTable td.dataTables_empty {
+    text-align: left;
+}
+
+/*
+При сортировке иногда появляется скролл и ширины таблицы и хеадера с футером не совпадают
+*/
+.dataTables_wrapper {
+    overflow-y: hidden;
+}

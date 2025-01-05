@@ -1,0 +1,24 @@
+table.fancytree-ext-table tbody tr:hover {
+  background-color: #eee;
+}
+
+table.fancytree-ext-table tbody tr.fancytree-active {
+  background-color: #d3d6de;
+}
+
+#header-fixed {
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: white;
+}
+
+#search_tree {
+  height: 22px !important;
+  display: inline;
+  width: 240px;
+}
+
+.tree-table {
+  width: 100%
+}

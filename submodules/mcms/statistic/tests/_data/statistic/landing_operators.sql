@@ -1,0 +1,5 @@
+set foreign_key_checks=0;
+TRUNCATE TABLE `landing_operators`;
+INSERT INTO `landing_operators` (`landing_id`, `operator_id`, `days_hold`, `default_currency_id`, `default_currency_rebill_price`, `buyout_price_usd`, `buyout_price_eur`, `buyout_price_rub`, `rebill_price_usd`, `rebill_price_eur`, `rebill_price_rub`, `cost_price`, `subscription_type_id`, `created_at`, `is_deleted`) VALUES (549, 1, 0, 1, 4.670, 0.000, 0.000, 20.000, 0.000, 0.000, 4.670, '20.00', 5, 0, 0);
+INSERT INTO `landing_operators` (`landing_id`, `operator_id`, `days_hold`, `default_currency_id`, `default_currency_rebill_price`, `buyout_price_usd`, `buyout_price_eur`, `buyout_price_rub`, `rebill_price_usd`, `rebill_price_eur`, `rebill_price_rub`, `cost_price`, `subscription_type_id`, `created_at`, `is_deleted`) VALUES (2335, 222, 0, 1, 2.600, 0.000, 0.000, 0.000, 0.000, 0.000, 2.600, '50 KZT', 4, 0, 0);
+set foreign_key_checks=1;

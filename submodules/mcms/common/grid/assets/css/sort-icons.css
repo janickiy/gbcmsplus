@@ -1,0 +1,19 @@
+/* add sorting icons to gridview sort links */
+table a.asc:after, table a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+table a.asc:after {
+  content: "\e155";
+}
+
+table a.desc:after {
+  content: "\e156";
+}

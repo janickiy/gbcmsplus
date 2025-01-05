@@ -1,0 +1,67 @@
+<?php
+
+return [
+  'u101_2016_06_02' => [
+    'date' => '2016-06-02',
+    'user_currency' => 'rub',
+    'user_id' => 101,
+    'country_id' => 999,
+    'type' => 1,
+    'profit_rub' => 200,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ],
+  'u101_2016_06_03' => [
+    'date' => '2016-06-02',
+    'user_currency' => 'rub',
+    'user_id' => 101,
+    'type' => 0,
+    'profit_rub' => 222.22,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ],
+  'u101_today' => [
+    'date' => date('Y-m-d'),
+    'user_currency' => 'rub',
+    'user_id' => 101,
+    'type' => 0,
+    'profit_rub' => 44.44,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ],
+  'u102_2016_06_02' => [
+    'date' => '2016-06-02',
+    'user_currency' => 'eur',
+    'user_id' => 102,
+    'type' => 0,
+    'profit_rub' => 200,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ],
+  'u103_2016_06_02' => [
+    'date' => '2016-06-02',
+    'user_currency' => 'usd',
+    'user_id' => 103,
+    'type' => 0,
+    'profit_rub' => 200,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ],
+  'u4_2016_06_02' => [
+    'date' => '2016-06-02',
+    'user_id' => 4,
+    'type' => 0,
+    'profit_rub' => 200,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ],
+  'u104_2016_06_02' => [
+    'date' => '2016-06-02',
+    'user_currency' => 'rub',
+    'user_id' => 104,
+    'type' => 0,
+    'profit_rub' => 200,
+    'profit_eur' => 2.5,
+    'profit_usd' => 2.7,
+  ]
+];

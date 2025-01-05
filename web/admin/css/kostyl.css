@@ -1,0 +1,338 @@
+.help-block {
+  word-break: break-word;
+}
+
+body .file-drop-zone-title {
+  padding: 0 10px;
+}
+
+.popover {
+  /* Для хинтов кнопок в модалке процессинга выплат */
+  max-width: 400px !important;
+}
+
+span.select2-container--smartadmin span.selection span.select2-selection {
+  height: 32px;
+}
+
+table.dataTable tfoot > tr > td input, table.dataTable thead > tr > td input {
+  font-weight: 400;
+  width: 100% !important;
+}
+
+.ui-button-text-only .ui-button-text {
+  padding: .08em;
+}
+
+.popover.right {
+  padding-right: 0 !important;
+}
+
+table.dataTable thead .sortingCell a {
+  color: #333;
+  display: block;
+  position: relative;
+}
+table.dataTable thead .sortingCell a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 16px;
+  width: 14px;
+  right: -18px;
+  top: 1px;
+}
+table.dataTable.table-condensed thead .sortingCell a:before {
+  right: -14px;
+}
+table.dataTable thead .sortingCell a.asc:before {
+  background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABVVVUT3Vn+AAAAAXRSTlMAQObYZgAAAB1JREFUCNdjwAkcgPgBAwPjBwYG5h8MDOx/GAgBAKRJBBCQbHkwAAAAAElFTkSuQmCC") no-repeat scroll right center;
+}
+table.dataTable thead .sortingCell a.desc:before {
+  background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABVVVUT3Vn+AAAAAXRSTlMAQObYZgAAABxJREFUCNdjIATY/zAwMP9gYGD8AOQ8AGIHnEoBkNkEEEbbutQAAAAASUVORK5CYII=") no-repeat scroll right center;
+}
+table.dataTable thead tr.filters td{
+  padding: 0!important;
+}
+.select2-container--smartadmin .select2-selection--multiple .select2-selection__rendered {
+  box-sizing: border-box;
+  display: block;
+  line-height: 1.42857;
+  list-style: outside none none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.select2-container--smartadmin .select2-selection__clear {
+  color: #000;
+  cursor: pointer;
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-right: 5px;
+  opacity: 0.4;
+  position: absolute;
+  right: 0;
+}
+.select2-container--smartadmin .select2-selection--multiple .select2-search--inline .select2-search__field {
+  background: transparent none repeat scroll 0 0;
+  height: 32px;
+  line-height: 1.42857;
+  margin-top: 0;
+  min-width: 5em;
+  padding: 0 12px;
+}
+.select2-container--smartadmin.select2-container--disabled .select2-selection--single {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+.select2-container--smartadmin.select2-container--disabled .select2-selection--single .select2-selection__clear {
+  display: none;
+}
+.select2-container--smartadmin.select2-container--disabled .select2-selection--multiple {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+.select2-container--smartadmin.select2-container--disabled .select2-selection__choice__remove {
+  display: none;
+}
+.sortable li.disabled {
+  color: #000000;
+}
+/* multiple select2 paddings fix */
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  padding-left: 0 !important;
+}
+
+.select2-container .select2-choice, .select2-selection--multiple {
+  line-height: 0 !important;
+}
+.select2 .select2-selection--multiple {
+  padding-right: 0 !important;
+}
+.select2-selection--multiple .select2-selection__choice {
+  padding-right: 6px;
+  max-width: 96%;
+  margin-bottom: 0;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 7px;
+}
+.select2-container .select2-selection--single .select2-selection__clear {
+  padding-top: 5px;
+}
+table.dataTable thead .sorting {
+  background: none;
+}
+th a{
+  color: #333;
+}
+table.dataTable thead th {
+  vertical-align: middle;
+}
+.little-header {
+  margin-left: 10px;
+}
+.btn-header>:first-child>a.cursor-pointer {
+  cursor: pointer !important;
+}
+.onoffswitch-container {
+  margin-left: 0;
+}
+.bootstrap-select>.dropdown-toggle.dashboard-items-toggle {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  opacity: 0.3;
+  padding-right: 5px;
+}
+.dashboard-items-toggle .caret {
+  display: none;
+}
+.bootstrap-select>.dropdown-toggle.dashboard-items-toggle:hover {
+  opacity: 1;
+}
+.checkbox + .note {
+  padding-left: 20px;
+  margin-top: -5px;
+}
+
+.file-preview .file-preview-frame,
+.file-preview .file-preview-image {
+  height: auto !important;
+  max-width: 100%;
+}
+.file-preview .kv-file-content {
+  height: auto !important;
+  width: auto !important;
+}
+
+.file-preview-thumbnails:before,
+.file-preview-thumbnails:after {
+  content: " ";
+  display: table;
+}
+
+.file-preview-thumbnails:after {
+  clear: both;
+}
+
+nav>ul li>a b {
+  position: absolute!important;
+  right: 10px;
+  top: 10px;
+}
+
+td .table {
+  margin-bottom: 0;
+  border: 0;
+}
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+
+.dt-toolbar-footer .hidden-xs {
+  display: block !important;
+}
+
+/* Пользователи - список */
+.col-min-width-150{
+  min-width: 0;
+  display: block !important;
+}
+@media screen and (max-width: 480px){
+  #usersGrid td[style*="width:"]{
+    width: 100% !important;
+  }
+  #usersGrid td[style*="max-width:"]{
+    max-width: none !important;
+  }
+}
+
+/* Пользователи - тикеты */
+/* TODO:
+- убрать заголовок лишив возможности сортировки
+- Добавить плейсхолдеры в инпуты */
+@media screen and (max-width: 480px){
+  .kv-table-wrap th,
+  .kv-table-wrap td {
+    box-sizing: border-box;
+  }
+}
+
+/* Пользователи - патрнерские программы */
+@media screen and (max-width: 480px){
+  .col-min-width-100{
+    min-width: 0;
+    display: block !important;
+  }
+
+  .grid-view table.dataTable td,
+  .grid-view table.dataTable th {
+    box-sizing: border-box;
+  }
+}
+/* Пользователи - рассылка */
+@media screen and (max-width: 480px) {
+  .kv-table-wrap tr > td:first-child {
+    font-size: 1.2em;
+    white-space: normal !important;
+  }
+}
+
+/*  */
+@media screen and (max-width: 767px) {
+  .table-responsive>.table>tbody>tr>td {
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 14px) !important;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .kv-table-wrap th,
+  .kv-table-wrap td {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  #sparks {
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  #sparks li {
+    padding: 0 7px 0 7px;
+  }
+
+  #sparks li h5 {
+    font-size: 8px;
+  }
+
+  .sparks-info span {
+    font-size: 14px;
+  }
+}
+
+.payment-wallet-info-table {
+  width: 100%;
+  word-break: break-word;
+}
+
+.payment-wallet-info-table th,
+.wallet-info-table th {
+  width: 40%;
+}
+
+.payment-wallet-info-table td,
+.wallet-info-table td {
+  width: 60%;
+}
+
+.custom-modal {
+  color: #000;
+  cursor: auto;
+}
+
+.pseudo-disabled {
+  background-color: #eee;
+}
+
+.toggle-on-icon {
+  color: green;
+  font-size: 16px;
+}
+
+.toggle-off-icon {
+  color: #FF851B;
+  font-size: 16px;
+}
+
+.toggle-on-disabled {
+  color: #AAA;
+  font-size: 16px;
+}
+
+.user-list_email-container {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: auto;
+  gap: 0px 10px;
+}
+
+.super-small {
+  font-size: 80%;
+}
+
+#usersGrid .table-responsive {
+  overflow-x: visible;
+}

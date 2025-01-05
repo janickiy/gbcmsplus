@@ -1,0 +1,2 @@
+$(function(){$(".js-goreg-form").click(function(c){setTimeout(function(){$(".js-reg-form").click()},100)}),$(".uk-modal").on({"show.uk.modal":function(){$(this).find("input").first().focus()}}),$(".custom-checkbox :checkbox").change(function(){1==$(this).prop("checked")?$(this).closest(".custom-checkbox").addClass("custom-checkbox_checked").removeClass("custom-checkbox_unchecked"):$(this).closest(".custom-checkbox").addClass("custom-checkbox_unchecked").removeClass("custom-checkbox_checked")})});
+//# sourceMappingURL=maps/main.js.map

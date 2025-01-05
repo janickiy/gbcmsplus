@@ -1,0 +1,304 @@
+body{
+	margin:0;
+	color:#000;
+	font: 14px Roboto, sans-serif;
+	background-image: url(/img/maintenance/wapclick/bg.svg);
+	-webkit-background-size: auto auto;
+	        background-size: auto;
+    background-repeat: repeat-x;
+    background-position: bottom -10% center;
+    background-attachment: fixed;
+    background-color: #E5E5E5;
+	min-width:320px;
+	overflow-x: hidden;
+	height: 100%;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:none;
+}
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 100%;
+	font-size: 14px;
+}
+*, *:before, *:after{
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+	-moz-box-sizing: inherit;
+}
+*{max-height: 1000000px; outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary{display: block;}
+img{
+	border-style:none;
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+a {
+	text-decoration: underline;
+	color: inherit;
+	outline:none;
+}
+input,
+textarea,
+select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color: inherit;
+}
+textarea{
+	overflow:auto;
+	resize:vertical;
+	vertical-align:top;
+	outline:none;
+}
+form, fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner{
+	padding:0;
+	border:0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+input[type="search"]{-webkit-appearance: none;}
+input[type="search"]::-webkit-search-cancel-button{-webkit-appearance: none;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+sub,
+sup{
+	font-size:75%;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.e-page {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center
+}
+
+.e-bee {
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+}
+
+.e-bee>div {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 70% 70%;
+            background-size: 70%;
+}
+
+.e-bee_money_1 {
+    top: -70px;
+    margin-top: 0px;
+    margin-left: 450px;
+    height: 172px;
+    width: 107px;
+    background-image: url(/img/maintenance/wapclick/bee-4.svg);
+    display: none;
+}
+
+.e-bee_money_2 {
+    top: -220px;
+    margin-top: 0px;
+    margin-left: -10%;
+    height: 124px;
+    width: 77px;
+    background-image: url(/img/maintenance/wapclick/bee-3.svg);
+}
+
+.e-bee_money_3 {
+    top: 115px;
+    margin-top: 0px;
+    margin-left: 13%;
+    height: 41px;
+    width: 26px;
+    background-image: url(/img/maintenance/wapclick/bee-2.svg);
+}
+
+.e-bee_money_4 {
+    top: 60px;
+    margin-top: 0px;
+    margin-left: -30%;
+    height: 82px;
+    width: 51px;
+    background-image: url(/img/maintenance/wapclick/bee-2.svg);
+}
+
+.e-bee_money_5 {
+    top: -180px;
+    margin-top: 0px;
+    margin-left: -180px;
+    height: 41px;
+    width: 26px;
+    background-image: url(/img/maintenance/wapclick/bee-2.svg);
+    display: none;
+}
+
+.e-bee_money_6 {
+    top: 30px;
+    margin-top: 0px;
+    margin-left: -400px;
+    height: 100px;
+    width: 63px;
+    background-image: url(/img/maintenance/wapclick/bee-3.svg);
+    display: none;
+}
+
+.e-bee_money_7 {
+    top: -190px;
+    margin-top: 0px;
+    margin-left: -590px;
+    height: 172px;
+    width: 106px;
+    background-image: url(/img/maintenance/wapclick/bee-1.svg);
+    display: none;
+}
+
+.e-bee_money {
+    position: absolute;
+    left: 50%;
+}
+
+.e-popup {
+	position: relative;
+	width: 95%;
+	max-width: 27rem;
+	margin: 0 auto;
+	display: block;
+	padding: 2rem 1rem;
+	text-align: center;
+	margin-bottom: 20vh;
+	background-color: #E5E5E5;
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	z-index: 999;
+	border: 1px solid #d4d4d4;
+}
+
+.e-popup__text {
+	color: #191919;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+
+.e-popup__text2 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+@media (min-width: 500px) and (min-height: 600px) {
+	html { font-size: 28px; }
+	.e-popup {
+		padding: 1.4rem 1rem;
+	}
+}
+
+@media (min-width: 1170px) {
+	.e-bee>div {
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    -webkit-background-size: contain;
+	            background-size: contain;
+	}
+	.e-bee_money_1 {
+	    top: -70px;
+	    margin-top: 0px;
+	    margin-left: 450px;
+	    height: 172px;
+	    width: 107px;
+	    background-image: url(/img/maintenance/wapclick/bee-4.svg);
+	    display: block;
+	}
+
+	.e-bee_money_2 {
+	    top: -280px;
+	    margin-top: 0px;
+	    margin-left: 200px;
+	    height: 124px;
+	    width: 77px;
+	    background-image: url(/img/maintenance/wapclick/bee-3.svg);
+	    display: block;
+	}
+
+	.e-bee_money_3 {
+	    top: 115px;
+	    margin-top: 0px;
+	    margin-left: 40px;
+	    height: 41px;
+	    width: 26px;
+	    background-image: url(/img/maintenance/wapclick/bee-2.svg);
+	    display: block;
+	}
+
+	.e-bee_money_4 {
+	    top: 60px;
+	    margin-top: 0px;
+	    margin-left: -50px;
+	    height: 82px;
+	    width: 51px;
+	    background-image: url(/img/maintenance/wapclick/bee-2.svg);
+	    display: block;
+	}
+
+	.e-bee_money_5 {
+	    top: -180px;
+	    margin-top: 0px;
+	    margin-left: -180px;
+	    height: 41px;
+	    width: 26px;
+	    background-image: url(/img/maintenance/wapclick/bee-2.svg);
+	    display: block;
+	}
+
+	.e-bee_money_6 {
+	    top: 30px;
+	    margin-top: 0px;
+	    margin-left: -400px;
+	    height: 100px;
+	    width: 63px;
+	    background-image: url(/img/maintenance/wapclick/bee-3.svg);
+	    display: block;
+	}
+
+	.e-bee_money_7 {
+	    top: -190px;
+	    margin-top: 0px;
+	    margin-left: -590px;
+	    height: 172px;
+	    width: 106px;
+	    background-image: url(/img/maintenance/wapclick/bee-1.svg);
+	    display: block;
+	}
+}

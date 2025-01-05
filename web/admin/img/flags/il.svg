@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-269 374 72 46" style="enable-background:new -269 374 72 46;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#003671;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M-204,420H-262c-3.8,0-7-3.1-7-7V381c0-3.8,3.1-7,7-7h58.1c3.8,0,7,3.1,7,7V413
+			C-197,416.9-200.1,420-204,420z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<g>
+			<rect x="-270.2" y="371.1" class="st1" width="74.3" height="52.4"/>
+			<path d="M-195.7,423.6h-74.6V371h74.6V423.6z M-270,423.3h74.1v-52.1H-270V423.3z"/>
+		</g>
+		<g>
+			<path class="st2" d="M-225.7,397.3c0,0,3.7,6.2,3.7,6.2h-7.4l-3.6,6l-3.6-6h-7.4c0,0,3.7-6.2,3.7-6.2c0,0-3.7-6.2-3.7-6.2h7.4
+				l3.6-6l3.6,6h7.4C-222,391.1-225.7,397.3-225.7,397.3z"/>
+		</g>
+		<g>
+			<g>
+				<polygon class="st1" points="-240.5,393 -237.8,393 -239.2,395.3 				"/>
+			</g>
+			<g>
+				<polygon class="st1" points="-225.5,393 -228.2,393 -226.9,395.3 				"/>
+			</g>
+			<g>
+				<polygon class="st1" points="-231.7,391.1 -233,388.9 -234.3,391.1 				"/>
+			</g>
+			<g>
+				<polygon class="st1" points="-240.5,401.5 -237.8,401.5 -239.2,399.2 				"/>
+			</g>
+			<g>
+				<polygon class="st1" points="-225.5,401.5 -228.2,401.5 -226.9,399.2 				"/>
+			</g>
+			<g>
+				<polygon class="st1" points="-228,397.3 -230.6,401.5 -235.5,401.5 -238,397.3 -235.5,393 -230.6,393 				"/>
+			</g>
+			<g>
+				<polygon class="st1" points="-231.7,403.5 -233,405.6 -234.3,403.5 				"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<rect x="-270.2" y="376" class="st2" width="74.3" height="8.2"/>
+				<path d="M-195.7,384.3h-74.6v-8.4h74.6V384.3z M-270,384h74.1v-7.9H-270V384z"/>
+			</g>
+			<g>
+				<rect x="-270.2" y="410.3" class="st2" width="74.3" height="8.2"/>
+				<path d="M-195.7,418.6h-74.6v-8.4h74.6V418.6z M-270,418.4h74.1v-7.9H-270V418.4z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

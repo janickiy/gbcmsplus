@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-269 374 72 46" style="enable-background:new -269 374 72 46;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#0077BE;}
+	.st2{fill:none;stroke:#000000;stroke-width:0.25;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M-204,420H-262c-3.8,0-7-3.1-7-7V381c0-3.8,3.1-7,7-7h58.1c3.8,0,7,3.1,7,7V413
+			C-197,416.9-200.1,420-204,420z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<g>
+			<polygon class="st1" points="-193,423.2 -193,369.8 -273,369.8 -273,423.2 			"/>
+		</g>
+		<g>
+			<path d="M-192.8,423.3h-80.3v-53.6h80.3V423.3z M-272.9,423.1h79.8v-53.1h-79.8V423.1z"/>
+		</g>
+		<g>
+			<path class="st1" d="M-233,396.5"/>
+		</g>
+		<g>
+			<path class="st2" d="M-233,396.5"/>
+		</g>
+		<g>
+			<polygon class="st3" points="-193,381.7 -243.4,381.7 -243.4,375.7 -193,375.7 			"/>
+		</g>
+		<g>
+			<path d="M-192.8,381.8h-50.7v-6.2h50.7V381.8z M-243.3,381.6h50.2v-5.7h-50.2V381.6z"/>
+		</g>
+		<g>
+			<polygon class="st3" points="-193,393.5 -243.4,393.5 -243.4,387.6 -193,387.6 			"/>
+		</g>
+		<g>
+			<path d="M-192.8,393.7h-50.7v-6.2h50.7V393.7z M-243.3,393.4h50.2v-5.7h-50.2V393.4z"/>
+		</g>
+		<g>
+			<polygon class="st3" points="-193,417.3 -273,417.3 -273,411.3 -193,411.3 			"/>
+		</g>
+		<g>
+			<path d="M-192.8,417.4h-80.3v-6.2h80.3V417.4z M-272.9,417.1h79.8v-5.7h-79.8V417.1z"/>
+		</g>
+		<g>
+			<polygon class="st3" points="-255.3,399.4 -193,399.4 -193,405.4 -273,405.4 -273,399.4 -261.3,399.4 -261.3,387.6 -273,387.6 
+				-273,381.7 -261.3,381.7 -261.3,369.8 -255.3,369.8 -255.3,381.7 -243.4,381.7 -243.4,387.6 -255.3,387.6 			"/>
+		</g>
+		<g>
+			<path d="M-192.8,405.5h-80.3v-6.2h11.8v-11.6h-11.8v-6.2h11.8v-11.9h6.2v11.9h11.9v6.2h-11.9v11.6h62.4V405.5z M-272.9,405.3
+				h79.8v-5.7h-62.4v-12.1h11.9v-5.7h-11.9v-11.9h-5.7v11.9h-11.8v5.7h11.8v12.1h-11.8V405.3z"/>
+		</g>
+	</g>
+</g>
+</svg>

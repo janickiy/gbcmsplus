@@ -1,0 +1,1 @@
+if ($.pjax) $.pjax.defaults.timeout = 0;

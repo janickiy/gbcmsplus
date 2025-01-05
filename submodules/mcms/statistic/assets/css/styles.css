@@ -1,0 +1,48 @@
+#hidden-filters .form-group {
+  width: 100%;
+}
+#hidden-filters {
+  float: left;
+  width: 100%
+}
+.filter_pos {
+  float: left;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+.filter_pos:not(:last-child) {
+  margin-right: 10px;
+}
+
+#subscription-detail-view-wrap th,
+#subscription-detail-view-wrap td,
+#statistic-data-table-view th,
+#statistic-data-table-view td {
+  padding: 3px;
+  font-size: 12px;
+}
+#subscription-detail-view-wrap td {
+  word-break: break-all;
+}
+
+.user_filter {
+  width: 200px;
+}
+
+.filters-left {
+  float: left;
+}
+
+.filters-right {
+  float: right;
+}
+
+.filter_pos_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

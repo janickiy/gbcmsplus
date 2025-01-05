@@ -1,0 +1,146 @@
+@import "dropdowns";
+
+.filters {
+	margin-bottom: 5px;
+
+	@media(max-width: 767px) {
+		margin-top: 20px;
+		padding: 0 10px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		.bootstrap-select {
+			width: 35%!important;
+			margin: 0!important;
+		}
+
+		.btn-period {
+			margin: 0!important;
+			width: 65%!important;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+		}
+
+		.bs-caret {
+			display: none;
+		}
+		.filter-option {
+			text-overflow: ellipsis;
+		}
+
+	}
+
+	.btn {
+		padding: 11px 15px;
+		font-size: 12px;
+
+		@media (max-width: 1200px) {
+			padding-left: 13px;
+			padding-right: 13px;
+		}
+
+		@media(max-width: 350px) {
+			font-size: 10px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+	}
+
+	.btn-group {
+		margin-right: 15px;
+
+		@media (max-width: 1200px) {
+			margin-right: 10px;
+		}
+	}
+
+	.switcher {
+
+	}
+}
+
+.countries-select {
+	img {
+		width: 20px;
+		vertical-align: middle;
+		position: relative;
+		bottom: 1px;
+		margin-right: 6px;
+	}
+}
+
+.switcher {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 41px;
+
+	&__label {
+		color: #1d1d1d;
+		margin-right: 10px;
+	}
+
+	&__bar {
+		vertical-align: middle;
+
+		label {
+			margin-bottom: 0;
+			display: block;
+
+			span {
+				width: 28px;
+				height: 16px;
+				border: 1px solid #CDCDCD;
+				background-color: transparent;
+				border-radius: 8px;
+				margin: 0;
+				position: relative;
+				-webkit-transition: background-color .3s, border-color .3s;
+				transition: background-color .3s, border-color .3s;
+				cursor: pointer;
+				display: block;
+				bottom: 1px;
+
+
+				&:after {
+					content:"";
+					display: block;
+					width: 12px;
+					height: 12px;
+					background-color: #CDCDCD;
+					border-radius: 50%;
+					position: absolute;
+					left: 1px;
+					top: 1px;
+					-webkit-transition: left .3s;
+					transition: left .3s;
+				}
+			}
+		}
+
+		input {
+			display: none;
+		}
+
+		input:checked + span {
+			background-color: #40AE2B;
+			border-color: #40AE2B;
+
+			&:after {
+				left: 13px;
+				background-color: #fff;
+			}
+		}
+	}
+}

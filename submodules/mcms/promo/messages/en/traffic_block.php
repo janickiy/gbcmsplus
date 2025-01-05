@@ -1,0 +1,21 @@
+<?php
+return [
+  'attribute-id' => 'ID',
+  'attribute-user_id' => 'Partner',
+  'attribute-operator_id' => 'Operator',
+  'attribute-provider_id' => 'Provider',
+  'attribute-is_blacklist' => 'Rule type',
+  'attribute-created_at' => 'Created at',
+  'attribute-updated_at' => 'Updated at',
+  'attribute-comment' => 'Comment',
+  'menu' => 'Traffic blocking',
+  'update' => 'Update rule',
+  'create' => 'Create rule',
+  'unique-user-operator-error' => 'Operator is already added to the user',
+  'is_blacklist_true' => 'To disable',
+  'is_blacklist_false' => 'To enable',
+  'is_blacklist_traffic_blocks_false_label' => 'Disable all carriers except enabled',
+  'is_blacklist_traffic_blocks_true_label' => 'Enable all carriers except disabled',
+  'is_blacklist_traffic_blocks_true_hint' => 'The list "To enable" will be ignored',
+  'is_blacklist_traffic_blocks_false_hint' => 'The list "To disable" will be ignored',
+];

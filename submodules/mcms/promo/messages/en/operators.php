@@ -1,0 +1,40 @@
+<?php
+return [
+  'main' => 'Carriers',
+  'create' => 'Add carrier',
+  'choose_country' => 'Choose country',
+  'list' => 'Carriers list',
+  'update' => 'Edit carrier',
+  'view' => 'View carrier',
+  'attribute-name' => 'Title',
+  'attribute-code' => 'Country code',
+  'attribute-status' => 'Status',
+  'attribute-is_3g' => '3G operator',
+  'attribute-show_service_url' => 'Show service URL',
+  'status-active' => 'Active',
+  'status-inactive' => 'Inactive',
+  'attribute-created_at' => 'Created at',
+  'attribute-updated_at' => 'Updated at',
+  'attribute-created_by' => 'Created by',
+  'attribute-country_id' => 'Country',
+  'attribute-ipTextarea' => 'IP list',
+  'attribute_help-ipTextarea' => 'Write every record
+    in separate lines in following format. Example:<br /><blockquote>123.21.123.23<br />
+    79.124.128.0/25<br />
+    1.5.8.9-1.5.8.11</blockquote>',
+  'attribute-buyout_minutes' => 'Buyout after, minutes',
+  'attribute-is_buyout_only_after_1st_rebill' => 'Buyout only after 1st rebill',
+  'attribute-is_buyout_only_unique_phone' => 'Buyout only unique abonents',
+  'attribute-is_trial' => 'Trial',
+  'attribute-is_disallow_replace_landing' => 'Disable landing search for replace',
+  'ip-list' => 'IP addresses list',
+  'ip-attribute-ip' => 'IP address',
+  'ip-attribute-mask' => 'Mask',
+  'ip_save_error' => 'Wrong ip address',
+  'enter_operator_name' => 'Enter carrier\'s name',
+  'buyout_minutes_is_global' => 'Global: {minutes} minutes',
+  'global_no' => 'Not set (global: no)',
+  'global_yes' => 'Not set (global: yes)',
+  'attribute-is_geo_default' => 'Standard operator for this GEO',
+  'error-main_operator_for_the_selected_geo' => 'The main operator is already specified for the selected geo'
+];

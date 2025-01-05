@@ -1,0 +1,13 @@
+# Codeception Test Suite Configuration
+#
+# Suite for unit (internal) tests.
+
+class_name: UnitTester
+modules:
+    enabled:
+#      - Asserts
+#      - \mcms\pages\tests\Helper\Unit
+      - Yii2
+    config:
+      Yii2:
+        configFile: '../../../tests/config/web/main.php'

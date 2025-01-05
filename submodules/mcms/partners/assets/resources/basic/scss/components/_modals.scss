@@ -1,0 +1,200 @@
+//
+// Modals
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  -webkit-overflow-scrolling: touch;
+
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+    @include translate(0%, -25%);
+
+    @media (min-height: 700px) {
+      @include translate(-50%, -75%);
+    }
+    @include transition-transform(0.3s ease-out);
+  }
+  &.in .modal-dialog { 
+    @include translate(0%, 0%);
+    @media (min-height: 700px) {
+      @include translate(-50%, -50%) 
+    }
+  }
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  
+  width: auto;
+  margin: 10px;
+
+  @media (min-height: 700px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  background-color: $modal-content-bg;
+  border-radius: 0;
+  @include box-shadow(0 3px 9px rgba(0,0,0,.5));
+  background-clip: padding-box;
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-background;
+  background-color: $modal-backdrop-bg;
+  // Fade for backdrop
+  &.fade { @include opacity(0); }
+  &.in { @include opacity(.7); }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  background-color: #F6F6F6;
+  padding: 20px 30px;
+  border-bottom: 1px solid $modal-header-border-color;
+  min-height: ($modal-title-padding + $modal-title-line-height);
+}
+// Close icon
+.modal-header .close {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+// Title text within header
+.modal-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: $modal-title-line-height;
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  padding: $modal-inner-padding;
+}
+
+// Footer (for actions)
+.modal-footer {
+  padding: $modal-inner-padding;
+  border-top: 1px solid $modal-header-border-color;
+  text-align: right; // right align buttons
+  @include clearfix; // clear it in case folks use .pull-* classes on buttons
+
+  // Properly space out buttons
+  .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+  }
+
+  .btn-default {
+    background-color: #A3A3A3;
+    color: #fff;
+    border-color: #949494;
+
+    &:active {
+      background-color: #949494;
+      border-color: #949494;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: darken(#A3A3A3, 3%);
+    }
+  }
+  // but override that for button groups
+  .btn-group .btn + .btn {
+    margin-left: -1px;
+  }
+  // and override it for block buttons as well
+  .btn-block + .btn-block {
+    margin-left: 0;
+  }
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+// Scale up the modal
+@media (min-width: $screen-sm-min) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    width: $modal-md;
+    margin: 30px auto;
+  }
+  .modal-content {
+    @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+  }
+
+  // Modal sizes
+  .modal-sm { width: $modal-sm+50; }
+}
+@media (min-width: $screen-sm-min) and (min-height: 750px) {
+    .modal-dialog {
+      margin: 0px auto;
+    }
+  }
+
+@media (min-width: $screen-md-min) {
+  .modal-lg { width: $modal-lg; }
+}
+
+#promoModal {
+  width: 100% !important;
+  padding: 0 !important;
+  .modal-dialog {
+    width: 90% !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    margin: 50px 5% !important;
+  }
+}

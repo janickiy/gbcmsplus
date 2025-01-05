@@ -1,0 +1,173 @@
+@import '../utils/variables/variables';
+@import '../utils/mixins';
+
+@import '../components/icons';
+@import '../components/utilities';
+@import '../components/responsive-utilities'; 
+
+.content__position {
+	border-bottom: 1px solid #EDEDED;
+}
+.bgg {
+	background-color: #F9FAFC;
+}
+.faq {
+	&_list {
+		list-style: none;
+		counter-reset: li;
+
+		li {
+			font-weight: 600;
+			margin: 4px 0;
+			color: #7c7c7c;
+
+			a {
+				text-decoration: none;
+				border-bottom: 1px dotted #278cb2;
+				line-height: 15px;
+				display: inline-block;
+			}
+
+			&:before {
+				counter-increment: li;
+				content: counters(li,".") ". ";
+				font-weight: 400;
+				color: #278cb2;
+			}
+
+			ul {
+				counter-reset: li;
+				list-style: none;
+				margin-bottom: 15px;
+
+				li {
+					font-weight: 400;
+
+					a  {
+						color: #278cb2;
+					}
+				}
+			}
+
+			h3 {
+				display: inline-block;
+				font-size: 16px;
+				margin-top: 0;
+			}
+
+			&.c_reset {
+
+				ul {
+					counter-reset: i;
+
+					li {
+						color: #000;
+
+						li {
+							color: #7c7c7c;
+						}
+						&:before {
+							counter-increment: i;
+							content: counters(i,".") ". ";
+							font-weight: 400;
+							color: darken(#7c7c7c, 5%);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&_text {
+		 li {
+			&:before {
+				color: darken(#7c7c7c, 5%);
+			}
+
+			
+		}
+
+		> li {
+			> ul {
+				margin-bottom: 40px;
+			}
+		}
+
+		h3 {
+			height: 15px;
+			color: #000;
+		}
+	}
+
+}
+@media (max-width: 786px) {
+	.content__position {
+		padding: 10px 15px;
+	}		
+	.title h2 {
+		font-size: 16px;
+		padding: 20px 15px;
+	}
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.faq_list {
+		padding-left: 0;
+
+		li {
+			line-height: 13px;
+			margin: 10px 0;
+			a {
+				font-size: 12px;
+				display: inline;
+
+				&:before {
+					counter-increment: li;
+					content: counters(li,".") ". ";
+					font-weight: 400;
+					color: #278cb2;
+				}
+
+			}
+
+			ul {
+				counter-reset: i;
+				padding-left: 10px;
+				li {
+
+					li {
+					}
+					&:before {
+						counter-increment: i;
+						content: counters(i,".") ". ";
+						font-weight: 400;
+						color: darken(#7c7c7c, 5%);
+					}
+				}
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+	p {
+		font-size: 12px;
+	}
+	.faq_text {
+		li {
+			line-height: 15px;
+			font-size: 12px;
+
+			span {
+				font-weight: 500;
+				color: #000;
+			}
+
+			ul {
+				padding-left: 0;
+			}
+		}
+	}
+}

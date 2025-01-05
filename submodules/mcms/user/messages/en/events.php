@@ -1,0 +1,23 @@
+<?php
+return [
+    'auth_registered' => 'User is registered',
+    'auth_registered_auto-activation' => 'User is registered (auto activation)',
+    'auth_registered_hand-activation' => 'User is registered (manual activation)',
+    'auth_registered_email-activation' => 'User is registered (email activation)',
+    'auth_registered_invited' => 'User is registered (by invitation)',
+    'referral_registered' => 'Referral is registered',
+    'status_changed' => 'Status is changed',
+    'activation_code_sended' => 'Activation code is sent',
+    'password_sended' => 'Password is sent',
+    'event_users_password_generate_link_sended' => 'Link for password change is sent',
+    'password_changed' => 'Password is changed',
+    'auth_logged_in' => 'User logged in',
+    'auth_logged_out' => 'User logged out',
+    'user_created' => 'User is created',
+    'user_updated' => 'User is updated',
+    'user_blocked' => 'User is blocked',
+    'user_approved' => 'User is approved',
+    'new_password_sent' => 'New password is sent',
+    'user_approved_without_referrals' => 'User is approved (without referral link)',
+    'reseller_partner_blacklist_changed' => 'Reseller blacklist of partners has been changed',
+];

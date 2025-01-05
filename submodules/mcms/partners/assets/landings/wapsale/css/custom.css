@@ -1,0 +1,81 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.3
+Created: August 2014
+License URI: http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+
+.dropdown-remember {
+  width: 0px;
+  padding: 0!important;
+  height: 35px;
+  border: 0!important;
+}
+
+.form-group .hint-block {
+  display: none;
+}
+
+.help-block {
+  display: none;
+}
+
+.has-error .help-block {
+  color: red;
+  text-align: left;
+  display: block;
+}
+
+
+.custom-btn-dark {
+  color: #f1f1f1;
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.custom-btn-sm {
+  padding: 8px;
+  font-size: 12px;
+  min-width: 105px;
+}
+
+.custom-btn-login {
+  float: right;
+}
+
+.custom-btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.modal-center {
+  text-align: center;
+  width: 400px;
+}
+
+.modal-center .modal-footer .btn {
+  display: block;
+  margin: auto;
+}
+
+.modal-ok {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  line-height: 40px;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.modal-note {
+  padding: 20px;
+}

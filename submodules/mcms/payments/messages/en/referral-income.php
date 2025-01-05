@@ -1,0 +1,20 @@
+<?php
+return [
+  'attribute-date' => 'Date',
+  'attribute-date_from' => 'Date from',
+  'attribute-date_to' => 'Date to',
+  'attribute-user_id' => 'User ID',
+  'attribute-referral_id' => 'Referral ID',
+  'attribute-is_hold' => 'Hold',
+  'attribute-profit' => 'Profit',
+  'attribute-profit_from' => 'Profit from',
+  'attribute-profit_to' => 'Profit to',
+  'attribute-currency' => 'Currency',
+  'attribute-profit_rub' => 'Profit RUB',
+  'attribute-profit_eur' => 'Profit EUR',
+  'attribute-profit_usd' => 'Profit USD',
+  'attribute-referral_percent' => 'Referral percent',
+  'referrals-all' => 'All referrals',
+  'referrals-active' => 'Active',
+  'referrals-inactive' => 'Inactive',
+];

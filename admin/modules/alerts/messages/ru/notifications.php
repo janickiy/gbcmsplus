@@ -1,0 +1,21 @@
+<?php
+return [
+    'more' => 'превышено',
+    'less' => 'понижено',
+    'all-time' => 'За все время',
+    'for-day' => 'За {day}',
+    'for-day-hour' => 'За {hour} час {day}',
+    'message' => '{interval} было {direction} значение {metricName} на {deviation} ({percentDeviation} %)',
+    'message-field' => 'Сообщение',
+    'read_by-field' => 'Прочитано',
+    'event_id-field' => 'Id правила',
+    'event_name' => 'Название события',
+    'metric' => 'Название метрики',
+    'more_or_less' => 'Повысилось или понизилось значение',
+    'value' => 'Значение отклонения',
+    'minutes' => 'Количество минут',
+    'filters' => 'Фильтры',
+    'empty-filters' => 'Фильтры отсутствуют',
+    'compared-value' => 'Эталонное значение',
+    'current-value' => 'Текущее значение',
+];

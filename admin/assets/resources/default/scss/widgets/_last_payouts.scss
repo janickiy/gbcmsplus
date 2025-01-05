@@ -1,0 +1,21 @@
+.last_payouts {
+  display: block;
+  
+  &__sum {
+    &__value {
+      white-space: nowrap;
+      
+      > i {
+        font-size: 11px;
+      }
+    }
+  }
+  
+  &-success {
+    color: #39b100;
+  }
+  
+  &-error {
+    color: #fd244e;
+  }
+}

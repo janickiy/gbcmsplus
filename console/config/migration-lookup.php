@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'rbac' => '@yii/rbac/migrations',
+    'modmanager' => '@mcms/modmanager/migrations',
+    'logs' => '@mcms/logs/migrations',
+    'notifications' => '@mcms/notifications/migrations',
+    'pages' => '@mcms/pages/migrations',
+    'partners' => '@mcms/partners/migrations',
+    'payments' => '@mcms/payments/migrations',
+    'promo' => '@mcms/promo/migrations',
+    'statistic' => '@mcms/statistic/migrations',
+    'support' => '@mcms/support/migrations',
+    'user' => '@mcms/user/migrations',
+    'changelog' => '@rgk/changelog/migrations',
+    'payprocess' => '@rgk/payprocess/migrations',
+    'utils' => '@rgk/utils/migrations',
+    'settings' => '@rgk/settings/migrations',
+    'common_changelog' => 'common/modules/changelog/migrations',
+    'alerts' => '@admin/modules/alerts/migrations',
+    'admin' => '@admin/migrations',
+    'credits' => '@admin/modules/credits/migrations',
+    'loyalty' => '@mcms/loyalty/migrations',
+    'holds' => '@mcms/holds/migrations',
+    'currency' => '@mcms/currency/migrations',
+    'api' => '@mcms/api/migrations',
+];

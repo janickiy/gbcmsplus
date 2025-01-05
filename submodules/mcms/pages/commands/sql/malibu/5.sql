@@ -1,0 +1,8 @@
+INSERT INTO `page_props` (`id`, `page_id`, `page_category_prop_id`, `entity_id`, `multilang_value`, `value`) VALUES (374, 47, 9, NULL, 'a:2:{s:2:"ru";a:1:{i:0;s:36:"K-aHwNNmBYTDHUIDP0oFpVc1DtiFg0Di.svg";}s:2:"en";a:1:{i:0;s:36:"6amjqchpBJbc8tQaGTom_-BkQ1MyX4qV.svg";}}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (413, 47, 38, null, 'a:2:{s:2:"ru";s:9:"Malibu.ws";s:2:"en";s:9:"Malibu.ws";}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (449, 47, 64, null, 'a:2:{s:2:"ru";s:11:"//malibu.ws";s:2:"en";s:11:"//malibu.ws";}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (450, 47, 65, null, 'a:2:{s:2:"ru";s:13:"www.malibu.ws";s:2:"en";s:13:"www.malibu.ws";}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (451, 47, 66, null, 'a:2:{s:2:"ru";s:26:"Вход в кабинет";s:2:"en";s:7:"Sign in";}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (452, 47, 67, null, 'a:2:{s:2:"ru";s:24:"Нет аккаунта?";s:2:"en";s:15:"No account yet?";}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (453, 47, 68, null, 'a:2:{s:2:"ru";s:35:"Зарегистрируйтесь!";s:2:"en";s:8:"Sign up!";}', '');
+INSERT INTO page_props (id, page_id, page_category_prop_id, entity_id, multilang_value, value) VALUES (454, 47, 69, null, 'a:2:{s:2:"ru";s:22:"Регистрация";s:2:"en";s:6:"Signup";}', '');

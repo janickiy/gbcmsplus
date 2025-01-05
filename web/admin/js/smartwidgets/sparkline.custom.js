@@ -1,0 +1,1 @@
+$.fn.sparkline.defaults.common.chartRangeMin = 0;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-269 374 72 46" style="enable-background:new -269 374 72 46;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FBE200;}
+	.st2{fill:#1D1D1B;}
+	.st3{fill:#009C4E;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M-204,420H-262c-3.8,0-7-3.1-7-7V381c0-3.8,3.1-7,7-7h58.1c3.8,0,7,3.1,7,7V413
+			C-197,416.9-200.1,420-204,420z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<rect x="-280.8" y="373.3" class="st1" width="95.5" height="47.4"/>
+		<polygon class="st2" points="-280.8,377 -239.3,397 -280.8,417 		"/>
+		<polygon class="st2" points="-185.3,377 -226.8,397 -185.3,417 		"/>
+		<polygon class="st3" points="-275.4,373.3 -232.9,393.8 -190.1,373.3 		"/>
+		<polygon class="st3" points="-275.4,420.7 -232.9,400.2 -190.1,420.7 		"/>
+	</g>
+</g>
+</svg>

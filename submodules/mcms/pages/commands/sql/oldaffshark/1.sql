@@ -1,0 +1,1 @@
+INSERT INTO `page_categories` (`id`, `code`, `name`, `is_index_visible`, `is_url_visible`, `is_seo_visible`, `created_at`, `updated_at`) VALUES (1, 'common', 'a:2:{s:2:"ru";s:10:"Общее";s:2:"en";s:6:"Common";}', 0, 0, 0, 1456750992, 1456993442);

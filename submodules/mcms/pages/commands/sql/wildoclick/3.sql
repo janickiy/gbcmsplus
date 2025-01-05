@@ -1,0 +1,13 @@
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:26px;border-radius:13px;', 'a:2:{s:2:"ru";s:1:"1";s:2:"en";s:1:"1";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:30px;border-radius:15px;', 'a:2:{s:2:"ru";s:1:"2";s:2:"en";s:1:"2";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:38px;border-radius:19px;', 'a:2:{s:2:"ru";s:1:"3";s:2:"en";s:1:"3";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:52px;border-radius:26px;', 'a:2:{s:2:"ru";s:1:"4";s:2:"en";s:1:"4";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:62px;border-radius:31px;', 'a:2:{s:2:"ru";s:1:"5";s:2:"en";s:1:"5";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:80px;border-radius:40px;', 'a:2:{s:2:"ru";s:1:"6";s:2:"en";s:1:"6";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:90px;border-radius:45px;', 'a:2:{s:2:"ru";s:1:"7";s:2:"en";s:1:"7";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:104px;border-radius:52px;', 'a:2:{s:2:"ru";s:1:"8";s:2:"en";s:1:"8";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:106px;border-radius:53px;', 'a:2:{s:2:"ru";s:1:"9";s:2:"en";s:1:"9";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('heignt:110px;border-radius:55px;', 'a:2:{s:2:"ru";s:2:"10";s:2:"en";s:2:"10";}', 150);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('inner', 'a:2:{s:2:"ru";s:25:"Первая орбита";s:2:"en";s:25:"Первая орбита";}', 151);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('middle', 'a:2:{s:2:"ru";s:25:"Вторая орбита";s:2:"en";s:25:"Вторая орбита";}', 151);
+INSERT INTO page_category_prop_entities (code, label, page_category_prop_id) VALUES ('outer', 'a:2:{s:2:"ru";s:25:"Третья орбита";s:2:"en";s:25:"Третья орбита";}', 151);

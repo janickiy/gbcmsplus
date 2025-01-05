@@ -1,0 +1,22 @@
+<?php
+return [
+  'main' => 'Campaigns',
+  'currencies' => 'Currencies',
+  'countries' => 'Countries',
+  'operators' => 'Carriers',
+  'providers' => 'Providers',
+  'trafficback_providers' => 'Trafficback collectors',
+  'offer_categories' => 'Offers categories',
+  'landing_categories' => 'Landing page categories',
+  'landings' => 'List',
+  'landing_sets' => 'Landing page sets',
+  'landing_unblock_requests' => 'Approval requests',
+  'domains' => 'Domains',
+  'references' => 'Glossary',
+  'banners' => 'Banners',
+  'partner_programs' => 'Affiliate groups',
+  'landing_update' => 'Update landing',
+  'arbitrary_source_update' => 'Update link',
+  'webmaster_source_update' => 'Update source',
+  'correct_conditions' => 'Subscriptions correction',
+];

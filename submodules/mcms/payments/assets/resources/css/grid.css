@@ -1,0 +1,19 @@
+.column-id {
+    max-width: 100px;
+}
+
+.column-action {
+    min-width: 150px;
+}
+
+.column-range {
+    max-width: 150px;
+}
+
+.column-date {
+    max-width: 200px;
+}
+
+.column-select {
+    max-width: 140px;
+}

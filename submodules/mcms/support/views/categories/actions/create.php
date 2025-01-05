@@ -1,0 +1,22 @@
+<?php
+use mcms\common\helpers\Link;
+use mcms\common\widget\modal\Modal;
+use yii\bootstrap\Html;
+use yii\helpers\Url;
+
+?>
+<?php $link = Link::get('/support/categories/create/') ?>
+
+<?php if ($link) : ?>
+  <?= Modal::widget([
+    'toggleButtonOptions' => [
+      'tag' => 'a',
+      'label' => Html::icon('plus') . ' ' . Yii::_t('support.controller.create_category'),
+      'class' => 'btn btn-success',
+      'data-pjax' => 0,
+    ],
+    'url' => Url::to(['/support/categories/create']),
+  ]) ?>
+<?php else : ?>
+  <?= $link ?>
+<?php endif ?>

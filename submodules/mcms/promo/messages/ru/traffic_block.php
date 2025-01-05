@@ -1,0 +1,21 @@
+<?php
+return [
+  'attribute-id' => 'ID',
+  'attribute-user_id' => 'Партнер',
+  'attribute-operator_id' => 'Оператор',
+  'attribute-provider_id' => 'Провайдер',
+  'attribute-is_blacklist' => 'Тип правила',
+  'attribute-created_at' => 'Дата создания',
+  'attribute-updated_at' => 'Дата изменения',
+  'attribute-comment' => 'Комментарий',
+  'menu' => 'Блокировка трафика',
+  'update' => 'Редактировать правило',
+  'create' => 'Добавить правило',
+  'unique-user-operator-error' => 'Оператор уже добавлен для данного пользователя',
+  'is_blacklist_true' => 'Запретить',
+  'is_blacklist_false' => 'Разрешить',
+  'is_blacklist_traffic_blocks_false_label' => 'Запретить все операторы, кроме разрешенных',
+  'is_blacklist_traffic_blocks_true_label' => 'Разрешить все операторы, кроме запрещенных',
+  'is_blacklist_traffic_blocks_true_hint' => 'Список разрешенных операторов использован не будет',
+  'is_blacklist_traffic_blocks_false_hint' => 'Список запрещенных операторов использован не будет',
+];

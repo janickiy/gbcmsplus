@@ -1,0 +1,949 @@
+//
+// Tables
+// --------------------------------------------------
+
+
+table {
+	background-color: $table-bg;
+}
+caption {
+	padding-top: $table-cell-padding;
+	padding-bottom: $table-cell-padding;
+	color: $text-muted;
+	text-align: left;
+}
+th {
+	text-align: left;
+}
+
+
+// Baseline styles
+
+.table {
+	width: 100%;
+	max-width: 100%;
+  //margin-bottom: $line-height-computed;
+  // Cells
+
+  > thead {
+  	background-color: #F7F8FA;
+  }
+  > thead {
+  	> tr {
+  		> th,
+  		> td {
+  			padding: 20px 10px;
+  			color: #278cb2;
+  			font-weight: 400;
+  		}
+  	}
+  }
+  > tbody,
+  > tfoot {
+  	> tr {
+  		> th,
+  		> td {
+  			padding: 15px 10px;
+  			line-height: $line-height-base;
+  			vertical-align: middle;
+  			border-top: 1px solid $table-border-color;
+  			color: #525252;
+  			font-weight: 300;
+  		}
+  	}
+  }
+
+  &-custom {
+  	> thead {
+  		> tr {
+  			> th,
+  			> td {
+  				padding: 20px 15px;
+  			}
+  		}
+  	}
+
+  	> tbody,
+  	> tfoot {
+  		> tr {
+  			> th,
+  			> td {
+  				padding: 15px 15px;
+  			}
+  		}
+  	}
+  }
+
+  > tfoot {
+  	background-color: #EAFAED;
+  	> tr {
+  		> td {
+  			font-weight: 600;
+  		}
+  	}
+  }
+  // Bottom align for column headings
+  > thead > tr > td {
+  	vertical-align: bottom;
+  	border-top: 1px solid $table-border-color;
+  	border-bottom: 1px solid $table-border-color;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+  	> tr:first-child {
+  		> th,
+  		> td {
+
+  		}
+  	}
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+  	border-top: 2px solid $table-border-color;
+  }
+
+  // Nesting
+  .table {
+  	background-color: $body-bg;
+  }
+}
+
+
+// Condensed table w/ half padding
+
+.table-condensed {
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				padding: $table-condensed-cell-padding;
+			}
+		}
+	}
+}
+
+
+// Bordered version
+//
+// Add borders all around the table and between all the columns.
+
+.table-bordered {
+	border: 1px solid $table-border-color;
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				border: 1px solid $table-border-color;
+			}
+		}
+	}
+	> thead > tr {
+		> th,
+		> td {
+			border-bottom-width: 2px;
+		}
+	}
+}
+
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped-custom {
+	> tbody > tr.even {
+		background-color: #F7F8FA;
+	}
+}
+
+.table-striped {
+	> tbody > tr:nth-child(even) {
+		background-color: #F7F8FA;
+	}
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+	> tbody > tr:hover {
+		background-color: $table-bg-hover;
+	}
+}
+
+
+// Table cell sizing
+//
+// Reset default table behavior
+
+table col[class*="col-"] {
+  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+  float: none;
+  display: table-column;
+}
+table {
+	td,
+	th {
+		&[class*="col-"] {
+	  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+	  float: none;
+	  display: table-cell;
+	}
+}
+}
+
+
+// Table backgrounds
+//
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
+
+// Generate the contextual variants
+@include table-row-variant('active', $table-bg-active);
+@include table-row-variant('success', $state-success-bg);
+@include table-row-variant('info', $state-info-bg);
+@include table-row-variant('warning', $state-warning-bg);
+@include table-row-variant('danger', $state-danger-bg);
+
+
+// Responsive tables
+//
+// Wrap your tables in `.table-responsive` and we'll make them mobile friendly
+// by enabling horizontal scrolling. Only applies <768px. Everything above that
+// will display normally.
+
+.table-responsive {
+	overflow-x: auto;
+  min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+
+  @media screen and (max-width: $screen-xs-max) {
+  	width: 100%;
+  	margin-bottom: ($line-height-computed * 0.75);
+  	overflow-y: hidden;
+  	-ms-overflow-style: -ms-autohiding-scrollbar;
+  	border: 1px solid $table-border-color;
+
+	// Tighten up spacing
+	> .table {
+		margin-bottom: 0;
+
+	  // Ensure the content doesn't wrap
+	  > thead,
+	  > tbody,
+	  > tfoot {
+	  	> tr {
+	  		> th,
+	  		> td {
+	  			white-space: nowrap;
+	  		}
+	  	}
+	  }
+	}
+
+	// Special overrides for the bordered tables
+	> .table-bordered {
+		border: 0;
+
+	  // Nuke the appropriate borders so that the parent can handle them
+	  > thead,
+	  > tbody,
+	  > tfoot {
+	  	> tr {
+	  		> th:first-child,
+	  		> td:first-child {
+	  			border-left: 0;
+	  		}
+	  		> th:last-child,
+	  		> td:last-child {
+	  			border-right: 0;
+	  		}
+	  	}
+	  }
+
+	  // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
+	  // chances are there will be only one `tr` in a `thead` and that would
+	  // remove the border altogether.
+	  > tbody,
+	  > tfoot {
+	  	> tr:last-child {
+	  		> th,
+	  		> td {
+	  			border-bottom: 0;
+	  		}
+	  	}
+	  }
+
+	}
+}
+}
+
+
+table.dataTable {
+	clear: both;
+	/* margin-top: 6px !important;
+	margin-bottom: 6px !important; */
+	max-width: none !important;
+	min-width: 100%;
+}
+table.dataTable td, table.dataTable th {
+	/* -webkit-box-sizing: content-box!important;
+	-moz-box-sizing: content-box!important;
+	box-sizing: content-box!important; */
+	white-space: nowrap;
+}
+table.dataTable td.dataTables_empty, table.dataTable th.dataTables_empty {
+	text-align: center;
+}
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+	white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_length label {
+	font-weight: normal;
+	text-align: left;
+	white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_length select {
+	width: 75px;
+	display: inline-block;
+}
+div.dataTables_wrapper div.dataTables_filter {
+	text-align: right;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+	font-weight: normal;
+	white-space: nowrap;
+	text-align: left;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+	margin-left: 0.5em;
+	display: inline-block;
+	width: auto;
+}
+div.dataTables_wrapper div.dataTables_info {
+	padding-top: 8px;
+	white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+	margin: 0;
+	padding-bottom: 16px;
+	margin-top: 20px;
+	white-space: nowrap;
+	text-align: center;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+	margin: 2px 0;
+	white-space: nowrap;
+}
+table.dataTable thead>tr>th.sorting_asc, 
+table.dataTable thead>tr>th.sorting_desc, 
+table.dataTable thead>tr>th.sorting, 
+table.dataTable thead>tr>td.sorting_asc, 
+table.dataTable thead>tr>td.sorting_desc, 
+table.dataTable thead>tr>td.sorting, 
+table.dataTable tbody>tr>td {
+	padding-left: 10px;
+	line-height: inherit;
+}
+table.dataTable tbody>tr>td a {
+	color: #3995b9;
+	text-decoration: none!important;
+	border-bottom: 1px solid #9CCADC;
+	height: 18px;
+	display: inline-block;
+
+	&:hover {
+		color: darken(#3995b9, 20%);
+	}
+}
+table.dataTable tfoot>tr>td {
+	position: relative;
+	/* left: 10px; */
+}
+table.dataTable thead>tr>th:active, table.dataTable thead>tr>td:active {
+	outline: none;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+	cursor: pointer;
+	position: relative;
+}
+table.dataTable thead .sorting:before, 
+table.dataTable thead .sorting_asc:before, 
+table.dataTable thead .sorting_desc:before, 
+table.dataTable thead .sorting_asc_disabled:before, 
+table.dataTable thead .sorting_desc_disabled:before {
+	/* position: absolute; */
+	position: relative;
+	margin-top: -7px;
+	display: inline-block;
+	font-family: 'icomoon';
+	opacity: 1;
+	line-height: 1;
+	color: #979797;
+	margin-left: -12px;
+	margin-right: 3px;
+	@media (max-width: 1500px) {
+		font-size: 8px;
+	}
+}
+table.dataTable thead .sorting:before {
+	opacity: 0.4;
+	/* content: "\e920" */}
+	table.dataTable thead .sorting_asc:before {
+		content: "\e91d";
+		font-size: 9px;
+		margin-top: -9px;
+		top: -5px;
+
+		@media (max-width: 1400px) {
+			font-size: 8px;
+		}
+	}
+	
+	table.dataTable thead .sorting_desc:before {
+		content: "\e91e";
+		font-size: 9px;
+		top: 2px;
+		@media (max-width: 1400px) {
+			font-size: 8px;
+		}
+		@media (max-width: 1400px) {
+			font-size: 8px;
+		}
+	}
+	table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
+		color: #eee;
+	}
+	div.dataTables_scrollHead table.dataTable {
+		margin-bottom: 0 !important;
+	}
+	div.dataTables_scrollBody table {
+		border-top: none;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	div.dataTables_scrollBody table thead .sorting:before, 
+	div.dataTables_scrollBody table thead .sorting_asc:before, 
+	div.dataTables_scrollBody table thead .sorting_desc:before {
+		display: none;
+	}
+	div.dataTables_scrollBody table tbody tr:first-child th, div.dataTables_scrollBody table tbody tr:first-child td {
+	/* border-top: none; */
+}
+div.dataTables_scrollFoot table {
+	margin-top: 0 !important;
+	border-top: none;
+}
+@media screen and (max-width: 767px) {
+	div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+		text-align: center;
+	}
+}table.dataTable.table-condensed>thead>tr>th {
+	padding-right: 20px;
+}
+table.dataTable.table-condensed .sorting:after, table.dataTable.table-condensed .sorting_asc:after, table.dataTable.table-condensed .sorting_desc:after {
+	top: 6px;
+	right: 6px;
+}
+table.table-bordered.dataTable {
+	border-collapse: separate !important;
+}
+table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+	border-left-width: 0;
+}
+table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable td:last-child, table.table-bordered.dataTable td:last-child {
+	border-right-width: 0;
+}
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+	border-bottom-width: 0;
+}
+div.dataTables_scrollHead table.table-bordered {
+	border-bottom-width: 0;
+}
+table.table-head_group {
+	overflow: hidden;
+}
+table.table-head_group thead {
+
+	td, th {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: none;
+		text-align: center;
+	}
+
+	tr:first-child {
+		td, th {
+			border-left: 1px solid #EAEAEC;
+			border-bottom: none;
+			font-weight: 300;
+			color: #858d9d;
+			position: relative;
+			padding-bottom: 8px;
+
+			&:before {
+				content:"";
+				display: block;
+				width: 1px;
+				height: 2000px;
+				background-color: #EAEAEC;
+				position: absolute;
+				left: -1px;
+				top: 100%;
+
+			}
+
+			&:first-child {
+				border-left: none;
+				color: #278cb2;
+				font-weight: 400;
+				/* width: 122px!important; */
+				padding-bottom: 10px;
+			}
+		}
+
+	}
+
+	tr:last-child {
+		td, th {
+			border-top: none;
+			border-bottom: none;
+			padding-top: 8px;
+		}
+	}
+	@media (max-width: 786px) {
+		tr {
+			display: none;
+		}
+
+	}
+}
+
+table.table-head_group {
+	@media (min-width: 787px) {
+		tr.child {
+			display: none;
+		}
+	}
+	@media (max-width: 786px) {
+		background-color: #F2F2F0;
+		display: block;
+		tbody {
+			display: block;
+			> tr:not(.child) {
+				margin: 3px 0;
+				display: block;
+				box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+				&.odd {
+					background-color: #fff;
+
+					& + tr.child {
+						background-color: #fff;
+						margin-top: -3px;
+						display: block;
+					}
+				}
+				&.even {
+					background-color: #F7F8FA;
+
+					& + tr.child {
+						background-color: #F7F8FA;
+						margin-top: -3px;
+						display: block;
+					}
+				}
+				td {
+					width: 100%;
+					max-width: 100%;
+					display: block;
+
+					
+					&:first-child {
+						position: relative;
+						padding-left: 50%!important;
+						text-align: left;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						padding-right: 30px!important;
+						height: 50px;
+						&:before {
+							content: attr(data-label)!important;
+							font-weight: 400;
+							background-color: transparent;
+							position: absolute;
+							left: 20px;
+
+						}
+						
+					}
+					
+				}
+			}
+
+			tr.child {
+				td {
+					display: block;
+					width: 100%;
+					padding: 0px 0 0px 0;
+					border: none;
+				}
+				ul {
+					width: 100%;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					
+
+					li {
+						@include clearfix();
+
+						span {
+							display: block;
+							width: 50%;
+							float: left;
+							text-align: left;
+							padding: 5px 0px;
+
+							&.dtr-title {
+								font-weight: 400;
+								padding: 5px 35px;
+							}
+						}
+
+						&.toggle-group-visible {
+							
+						}
+
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+				}
+				.t_mob {
+					text-align: left;
+					ul {
+						display: none;
+						margin: 0;
+						padding-bottom: 10px;
+					}
+					.toggle-group-visible {
+						text-align: left;
+						line-height: 30px;
+						padding: 5px 0px 5px 0px;
+						border-top: 1px solid #E8E8E9;
+						color: #858d9d;
+						position: relative;
+						cursor: pointer;
+						@include clearfix();
+
+						.dtr-title {
+							width: 50%;
+							float: left;
+							display: block;
+							padding-left: 25px;
+						}
+						.dtr-data {
+							width: 50%;
+							float: left;
+							display: block;
+							padding-right: 10px;
+							font-size: 12px;
+						}
+
+						&:before {
+							font-family: 'icomoon';
+							speak: none;
+							font-style: normal;
+							font-weight: normal;
+							font-variant: normal;
+							text-transform: none;
+							line-height: 1;
+							content: "\e924";
+							position: absolute;
+							right: 15px;
+							top: 50%;
+							font-size: 10px;
+							margin-top: -4px;
+							color: #B6B6B7;
+						}
+					}
+				}
+			}
+		}
+		
+		tfoot {
+			display: none;
+			tr {
+				display: block;
+				td {
+					display: block!important;
+					text-align: left;
+					position: relative;
+					padding-left: 40%;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					border: none;
+
+					&:before {
+						content: attr(data-label)!important;
+						font-weight: 400;
+						background-color: transparent;
+						position: absolute;
+						left: 20px;
+
+					}
+				}
+			}
+		}
+		&.main_dt {
+			tbody tr.child ul li{
+
+				&:nth-child(2) {
+					margin-top: 0;
+				}
+
+			}
+		}
+	}
+}
+.dataTables_scrollBody {
+	overflow-y: hidden!important;
+}
+.status {
+	&__ok {
+		color: #64b172!important;
+
+		a {
+			text-decoration: none;
+
+			.icon-file {
+				font-size: 8px;
+				background-color: #64b172;
+				color: #fff;
+				width: 15px;
+				line-height: 15px;
+				border-radius: 50%;
+				text-align: center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 3px;
+				position: relative;
+				bottom: 1px;
+				font-weight: 300;
+				padding-left: 1px;
+			}
+		}
+	}
+
+	&__fail {
+		color: #ff5353!important;
+		.icon-question {
+			font-size: 8px;
+			background-color: #FF5353;
+			color: #fff;
+			width: 15px;
+			line-height: 15px;
+			border-radius: 50%;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 3px;
+			position: relative;
+			bottom: 1px;
+			font-weight: 300;
+			padding-left: 1px;
+		}
+	}
+	&__warning {
+		color: #d8a03f !important;
+		.icon-question {
+			font-size: 8px;
+			background-color: #d8a03f;
+			color: #fff;
+			width: 15px;
+			line-height: 15px;
+			border-radius: 50%;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 3px;
+			position: relative;
+			bottom: 1px;
+			font-weight: 300;
+			padding-left: 1px;
+		}
+	}
+}
+.table-custom td:first-child, .table-custom th:first-child {
+    padding-left: 30px!important;
+}
+
+table.table {
+	width: 100%;
+	td, th {
+		.icon-ruble {
+			font-size: 10px;
+		}
+		.icon-euro {
+			font-size: 12px;
+			position: relative;
+			top: 1px;
+		}
+	}
+	@media (max-width: 1300px) {
+		td,th {
+			font-size: 13px;
+			.icon-ruble {
+				font-size: 9px;
+			}
+			.icon-euro {
+				font-size: 9px;
+			}
+		}
+	}
+}
+.dataTables_wrapper {
+	overflow-x: auto;
+}
+@media (min-width: 787px) {
+	.footer__mobile {
+		display: none!important;
+	}
+}
+
+@media (max-width: 786px) {
+	.table_filter {
+		display: none;
+	}
+	.toggle__footer-mobile {
+		background-color: #EAFAED;
+		line-height: 49px;
+		border-bottom: 1px solid #E1E9E3;
+		padding-left: 20px;
+		font-size: 12px;
+		margin-top: 3px;
+
+		position: relative;
+
+		
+	}
+	.footer__mobile {
+		background-color: #EAFAED;
+		box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+		ul {
+			
+			list-style: none;
+			margin: 0 0 0px 0;
+			padding: 0px 0 10px 0;
+			display: none;
+		}
+		
+
+		li {
+			@include clearfix();
+
+			span {
+				display: block;
+				width: 50%;
+				float: left;
+				font-size: 13px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+
+				&.dtr-title {
+					padding-left: 35px;
+					font-weight: 400;
+
+					.icon-ruble {
+						font-size: 10px;
+					}
+					.icon-euro {
+						font-size: 12px;
+						vertical-align: middle;
+					}
+				}
+
+				&.dtr-data {
+					font-weight: 300;
+				}
+			}
+		}
+
+		&-col {
+			
+			&:last-child {
+
+				span.dtr-data {
+					font-weight: 400;
+				}
+			}
+		}
+
+		&-title {
+			//padding-left: 25px;
+			border-top: 1px solid #E1E9E3;
+			//padding-top: 11px;
+			//padding-bottom: 11px;
+			font-size: 13px;
+			margin-top: 0px;
+			color: #858d9d;
+			background-color: #EAFAED;
+			position: relative;
+			line-height: 30px;
+			height: 41px;
+			padding: 5px 0;
+
+			&:first-child {
+				margin-top: 0;
+				border-top: none;
+			}
+
+			&:after {
+				font-family: 'icomoon';
+				speak: none;
+				font-style: normal;
+				font-weight: 400;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				content: "\e924";
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				font-size: 10px;
+				margin-top: -4px;
+				color: #B6B6B7;
+			}
+		}
+		.footer__mobile-title {
+			&.toggle-group-visible {
+			  .dtr-title {
+				width: 50%;
+				float: left;
+				display: block;
+				padding-left: 25px;
+
+				.icon-ruble {
+				  font-size: 9px;
+				}
+			  }
+			  .dtr-data {
+				width: 50%;
+				float: left;
+				display: block;
+				padding-right: 10px;
+				font-size: 12px;
+			  }
+			}
+		}
+	}
+}

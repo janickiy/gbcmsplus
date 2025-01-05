@@ -1,0 +1,4 @@
+<?php
+return [
+    'credits' => 'Кредиты',
+];

@@ -1,0 +1,21 @@
+<?php
+return [
+    'actions' => 'Actions',
+    'full-text' => 'Full text',
+    'required_view_path' => 'Option "viewPath" is required',
+    'update_short' => 'Edit',
+    'delete_short' => 'Del',
+    'assigned_users_elements_list_empty' => 'The elements assigned to you of users are missing',
+    'is_enabled' => 'Enabled',
+    'is_disabled' => 'Disabled',
+    'mass-delete-label' => 'Delete selected',
+    'mass-update-label' => 'Update selected',
+    'mass-update-info' => 'Only checked fields will be updated',
+    'mass-delete-confirm' => 'Are you sure you want to delete this items?',
+    'mass-model-choose-for-update' => 'Choose at least one field to update',
+    'date-compare-error' => '"{0}" can`t be less than "{1}"',
+    'mass-activate-label' => 'Activate',
+    'mass-deactivate-label' => 'Deactivate',
+    'mass-activate-confirm' => 'Are you sure you want to activate this items?',
+    'mass-deactivate-confirm' => 'Are you sure you want to deactivate this items?',
+];

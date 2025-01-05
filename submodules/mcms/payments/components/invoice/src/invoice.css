@@ -1,0 +1,145 @@
+body {
+  background: #fff;
+  background-image: none;
+  font-family: sans-serif;
+  font-size: 8pt;
+}
+
+.container {
+  line-height: 18px;
+  padding-top: 30px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.table {
+  border-spacing: 0;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 22px;
+}
+
+tr td,
+tr th {
+  padding: 0 3px;
+}
+
+tr td.no-padding,
+tr th.no-padding
+{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+tr.border td,
+td.border {
+  position: relative;
+}
+
+td.td-title {
+  height: 50px;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+.title-wrapper {
+  font-size: 14pt;
+  height: 50px;
+  display: block;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+  padding: 30px 0 20px;
+  color: #000;
+}
+
+p.title {
+  height: 50px;
+  display: block;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+tr.contacts td {
+  padding: 20px 0 30px;
+}
+
+tr.small td {
+  font-size: 6.5pt;
+}
+
+tr.small td .table td{
+  line-height:25px;
+}
+
+tr.small td {
+  padding: 0;
+}
+
+table.grid {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+table.grid tr td,
+table.grid tr th
+{
+  line-height: 25px;
+}
+
+table.grid tr th {
+  position: relative;
+  text-align: center;
+}
+
+table.grid tr td {
+  font-size: 6.5pt;
+  position: relative;
+}
+
+table.totals {
+  font-size: 7.5pt;
+  line-height: 25px;
+}
+
+p.border {
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+p.border,
+table.grid td,
+table.grid tr th,
+tr.border td,
+td.border {
+  border-bottom: 1px solid;
+}
+
+table.grid tr td {
+  border-bottom: 1px solid #ddd;
+}
+
+table.grid tr th {
+  border-top: 1px solid;
+}
+
+table.grid tr.no-border td {
+  border: none;
+}
+
+h2 {
+  font-size: 10pt;
+  color: #cccccc;
+}
+
+.invoice-head td {
+  padding: 0 8px;
+}
+
+.h-80 {
+  height: 80px;
+}

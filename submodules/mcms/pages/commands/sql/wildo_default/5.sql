@@ -1,0 +1,8 @@
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '374', '47', '9', NULL, 'a:2:{s:2:"ru";a:1:{i:0;s:36:"zq0NduOjqDHgLPaRHjVA_1M36abteRxr.svg";}s:2:"en";a:1:{i:0;s:36:"5Tm4zAWQWQvIG-7NOTM91BvV7niaFjKJ.svg";}}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '413', '47', '38', NULL, 'a:2:{s:2:"ru";s:11:"wildo.click";s:2:"en";s:11:"wildo.click";}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '449', '47', '64', NULL, 'a:2:{s:2:"ru";s:13:"//wildo.click";s:2:"en";s:13:"//wildo.click";}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '450', '47', '65', NULL, 'a:2:{s:2:"ru";s:11:"wildo.click";s:2:"en";s:11:"wildo.click";}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '451', '47', '66', NULL, 'a:2:{s:2:"ru";s:26:"Вход в кабинет";s:2:"en";s:7:"Sign in";}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '452', '47', '67', NULL, 'a:2:{s:2:"ru";s:24:"Нет аккаунта?";s:2:"en";s:15:"No account yet?";}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '453', '47', '68', NULL, 'a:2:{s:2:"ru";s:35:"Зарегистрируйтесь!";s:2:"en";s:8:"Sign up!";}', NULL );
+INSERT INTO `page_props`(`id`,`page_id`,`page_category_prop_id`,`entity_id`,`multilang_value`,`value`) VALUES ( '454', '47', '69', NULL, 'a:2:{s:2:"ru";s:22:"Регистрация";s:2:"en";s:6:"Signup";}', NULL );

@@ -1,0 +1,17 @@
+.top_countries {
+  display: block;
+  
+  canvas {
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media(max-width: 991px) {
+      max-width: 500px;
+      
+    }
+    
+    @media (max-width: 500px) {
+      max-width: 280px;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+#hidden-filters .form-group {
+  width: 100%;
+}
+#hidden-filters {
+  float: left;
+  width: 100%
+}
+.filter_pos {
+  float: left;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+.filter_pos:not(:last-child) {
+  margin-right: 10px;
+}
+
+#subscription-detail-view-wrap th,
+#subscription-detail-view-wrap td,
+#statisticTable-view th,
+#statisticTable-view td {
+  padding: 3px;
+  font-size: 12px;
+}
+#subscription-detail-view-wrap td {
+  word-break: break-all;
+}
+
+.user_filter {
+  width: 200px;
+}
+
+.filters-left {
+  float: left;
+}
+
+.filters-right {
+  float: right;
+}
+
+.filter_pos_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header-popover {
+  padding: 8px 10px 14px 6px;
+}
+
+div.bootstrap-select.btn-group.new-columns-templates-select {
+  display: block;
+  float: left;
+}
+div.bootstrap-select.btn-group.new-columns-templates-select button, div.bootstrap-select.btn-group.new-columns-templates-select button:hover {
+  color: #333333;
+}
+/*
+Иконка редактирования шаблона столбцов в стате
+ */
+.new-columns-templates-select .columns-template-icon {
+  position: absolute;
+  display: inline-block;
+  right: 25px;
+  margin-top: 1px;
+  padding: 0 5px;
+}
+
+/*
+Фикс для иконки селекта шаблонов столбцов в стате
+ */
+.new-columns-templates-select.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  right: 7px;
+  margin-top: 3px;
+}
+
+#statistic-filter-form .well {
+  padding-bottom: 8px;
+}
+
+.datepicker.datepicker-dropdown {
+  z-index: 1000 !important;
+}

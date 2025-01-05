@@ -1,0 +1,85 @@
+.investors {
+  &__info {
+    padding: 15px 15px;
+    border-top: 1px solid #ECECEC;
+    
+    a {
+      text-decoration: none;
+    }
+    
+    &_item {
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: middle;
+      font-size: 12px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      &__label {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px;
+        color: #807f7f;
+        text-transform: uppercase;
+      }
+      
+      &__value {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 400;
+        color: #262626;
+        white-space: nowrap;
+        
+        .sparkline {
+          margin-left: 5px;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+  
+  &__rebill,
+  &__boaght {
+    &__value {
+      white-space: nowrap;
+      
+      > i {
+        font-size: 10px;
+      }
+    }
+  }
+  
+  @media(max-width: 767px) {
+    .col-sm-6 {
+      text-align: left!important;
+      
+      &:first-child {
+        margin-bottom: 5px;
+      }
+    }
+    
+    &__info {
+      padding-top: 5px;
+      padding-bottom: 10px;
+      
+      a {
+        font-size: 12px;
+      }
+      
+      &_item {
+        &__label {
+          font-size: 10px;
+        }
+        
+        &__value {
+          font-size: 12px;
+        }
+      }
+      
+    }
+  }
+}

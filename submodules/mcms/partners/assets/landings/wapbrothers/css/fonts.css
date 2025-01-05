@@ -1,0 +1,8 @@
+/* NerisLight */
+@font-face { font-family: "NerisLight"; font-style: normal; font-weight: normal; src: url("../fonts/NerisLight/NerisLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NerisLight/NerisLight.woff") format("woff"), url("../fonts/NerisLight/NerisLight.ttf") format("truetype"), url("../fonts/NerisLight/NerisLight.svg#NerisLight") format("svg"); }
+
+/* NerisSemiBold */
+@font-face { font-family: "NerisSemiBold"; font-style: normal; font-weight: normal; src: url("../fonts/NerisSemiBold/NerisSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NerisSemiBold/NerisSemiBold.woff") format("woff"), url("../fonts/NerisSemiBold/NerisSemiBold.ttf") format("truetype"), url("../fonts/NerisSemiBold/NerisSemiBold.svg#NerisSemiBold") format("svg"); }
+
+/* NerisBlack */
+@font-face { font-family: "NerisBlack"; font-style: normal; font-weight: normal; src: url("../fonts/NerisBlack/NerisBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/NerisBlack/NerisBlack.woff") format("woff"), url("../fonts/NerisBlack/NerisBlack.ttf") format("truetype"), url("../fonts/NerisBlack/NerisBlack.svg#NerisBlack") format("svg"); }

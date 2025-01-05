@@ -1,0 +1,140 @@
+.partner-awaiting-paysums {
+  .total-payments {
+    background: #ffffff;
+    padding: 10px 15px;
+    font-size: 0;
+    
+    &__title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      font-weight: 600;
+      width: 150px;
+      margin-right: 10px;
+    }
+    
+    &__list {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      font-size: 14px;
+      
+      &__currency {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      
+      &__value {
+      
+      }
+    }
+  }
+  
+  .current-balances {
+    padding: 20px 15px;
+    font-size: 0;
+    
+    &__title {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      font-weight: 600;
+      width: 150px;
+      margin-right: 10px;
+      
+      @media (max-width: 600px) {
+        width: auto;
+      }
+    }
+    
+    &__toggle {
+      border-bottom: 1px dashed #999;
+      cursor: pointer;
+    }
+    
+    &__list {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: calc(100% - 160px);
+      vertical-align: top;
+  
+      @media (max-width: 600px) {
+        width: auto;
+      }
+    }
+    
+    &__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+      flex: 0 1 25%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      
+      &.not-first {
+        padding-top: 10px;
+      }
+      
+      &.last {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      
+      &__wallet {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 5px;
+        
+        &__value {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+          margin-right: 10px;
+          
+          i {
+            font-size: 12px;
+          }
+        }
+  
+        &__awaiting {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+    
+          i {
+            font-size: 12px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+  
+      &__name {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.caret-right {
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  margin-bottom: 1px;
+  vertical-align: middle;
+}

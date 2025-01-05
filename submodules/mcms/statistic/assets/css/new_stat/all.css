@@ -1,0 +1,219 @@
+#statisticTable {
+	position: relative;
+}
+
+/*size*/
+
+#statisticTable th{
+	padding: 0;
+}
+#statisticTable th a {
+	display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.6rem;
+}
+#statisticTable td,
+#statisticTable tr:first-child th,
+#statisticTable tr th:first-child{
+	padding: 1.6rem;
+}
+#statisticTable td,
+#statisticTable tr {
+	font-size: 1.4rem;
+}
+#statisticTable .celAdd {
+	font-size: 1rem;
+}
+#statisticTable thead th {
+	text-align: center;
+	font-weight: 400;
+}
+#statisticTable tbody tr td:first-child {
+	font-weight: 400;
+	text-align: left;
+}
+#statisticTable tr.total td:first-child,
+#statisticTable tr.avg td:first-child {
+	text-align: center;
+}
+#statisticTable tr.total td .celMain,
+#statisticTable tr.total td:first-child,
+#statisticTable tr.avg td .celMain,
+#statisticTable tr.avg td:first-child{
+	/*font-size: 5rem;*/
+	font-weight: 600;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+/* colors */
+
+
+#statisticTable th,
+#statisticTable td{
+	box-shadow: -1px -1px 0 0px #ccc inset;
+	border: 0px;
+}
+
+/*#statisticTable tr:last-child td {*/
+	/*border-bottom: 0px;*/
+/*}*/
+/*#statisticTable td:last-child,*/
+/*#statisticTable th:last-child {*/
+	/*border-right: 0px;*/
+/*}*/
+/*#statisticTable th:first-child,*/
+/*#statisticTable td:first-child {*/
+	/*border-left: 0px;*/
+/*}*/
+
+#statisticTable {
+	color: #666;
+}
+#statisticTable thead,
+#statisticTable tbody .total,
+#statisticTable tbody .avg,
+#statisticTable tbody td:first-child{
+	color: #333;
+}
+#statisticTable .celAdd {
+	color: #999;
+}
+#statisticTable tbody {
+	background-color: #fff;
+}
+
+#statisticTable thead th{
+	background-color: #eee
+}
+#statisticTable tbody td:first-child,
+#statisticTable .total,
+#statisticTable .avg {
+	background-color: #f8f8f8;
+}
+#statisticTable .moneyEUR {
+	color: #b299cc80;
+}
+#statisticTable .moneyUSD {
+	color: #85bb6580;
+}
+#statisticTable .moneyRUB {
+	color: #BD3B2F80;
+}
+#statisticTable .celAdd [class^="money"] {
+	color: #999;
+}
+#statisticTable tr.tbody:hover {
+	background-color: #d7ffd940;
+}
+
+
+/* cells */
+
+
+#statisticTable tr td:first-child,
+#statisticTable td {
+	white-space: nowrap;
+}
+#statisticTable tbody td {
+	position: relative;
+}
+
+#statisticTable tbody td .celAdd {
+	position: absolute;
+	right: 0.4rem;
+	bottom: 0.2rem;
+}
+
+
+
+#statisticTable tbody tr td {
+	text-align: right;
+}
+
+/* Stycky */
+#statisticTable thead tr th:first-child,
+#statisticTable tbody tr td:first-child {
+	position: sticky;
+	position: -webkit-sticky;
+	left: 0;
+	z-index: 100;
+}
+#statisticTable thead tr:first-child th:first-child,
+#statisticTable thead tr:last-child th{
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 110;
+}
+#statisticTable thead tr:first-child th:first-child {
+	bottom: 101%;
+}
+
+#statisticTable thead tr:last-child th:first-child{
+	position: sticky;
+	position: -webkit-sticky;
+	left: 0;
+	z-index: 120;
+}
+#main {
+	padding: 0;
+}
+
+#statisticTable th a.asc {
+	background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABVVVUT3Vn+AAAAAXRSTlMAQObYZgAAAB1JREFUCNdjwAkcgPgBAwPjBwYG5h8MDOx/GAgBAKRJBBCQbHkwAAAAAElFTkSuQmCC) no-repeat center right;
+}
+#statisticTable th a.desc {
+	background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABVVVUT3Vn+AAAAAXRSTlMAQObYZgAAABxJREFUCNdjIATY/zAwMP9gYGD8AOQ8AGIHnEoBkNkEEEbbutQAAAAASUVORK5CYII=) no-repeat center right;
+}
+
+#statistic-pjax {
+	overflow: auto;
+	width: 100%;
+	height: calc(100% - 185px);
+}
+@media all and (max-height: 600px ) {
+	#statistic-pjax {
+		overflow: auto;
+		width: 100%;
+		height: 100%;
+	}
+	#statisticTable td:first-child a{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: 80px;
+		display: block;
+	}
+}
+@media all and (max-width: 480px) {
+	#statisticTable td:first-child a{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: 80px;
+		display: block;
+	}
+	header[role="heading"] {
+		height: auto !important;
+	}
+}
+
+
+#statisticHeadFilters {
+	display: inline-flex;
+    height: 34px;
+    align-items: center;
+	flex-wrap: wrap;
+	/*float: left;*/
+}
+#statisticHeadFilters>div{
+	flex-wrap: wrap;
+}
+
+#statisticHeadFilters .statisticHeader {
+	padding: 0 1rem;
+}
+
+.select2-container--smartadmin .select2-selection--multiple .select2-search--inline .select2-search__field {
+	min-width: 8em !important;
+}

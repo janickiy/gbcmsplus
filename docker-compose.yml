@@ -1,0 +1,109 @@
+version: "3"
+
+
+volumes:
+  mysql-data:
+    driver: local
+  click-data:
+    driver: local
+
+
+networks:
+  mcms-net:
+    driver: "bridge"
+
+
+services:
+
+  mcms-main:
+    build: ./_docker/main/
+    #image:
+    #  dockerhub.wapdev.org/mcms
+    container_name:
+      mcms-main
+    networks:
+      mcms-net:
+        aliases:
+          - "modulecms.lc"
+          - "modulecms-test.lc"
+          - "mcms-api-handler.lc"
+          - "mcms-ml-handler.lc"
+    volumes:
+      - ./:/var/www:delegated
+      - ./_docker/main/nginx/sites-enabled:/etc/nginx/sites-enabled:ro
+      - ./_docker/main/supervisor/workers:/etc/supervisor/workers:ro
+    ports:
+      - 80:80
+    links:
+      - mcms-db
+      - mcms-clickhouse
+      - mcms-memcache
+      - mcms-rabbitmq
+    environment:
+      PHP_IDE_CONFIG: "serverName=modulecms.lc"
+    extra_hosts:
+      - "kp.rgk:37.59.192.158"
+
+  mcms-db:
+    image:
+      mariadb:10.7
+    container_name:
+      mcms-db
+    networks:
+      mcms-net:
+        aliases:
+          - "db"
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./_docker/mysql/health.sh:/health.sh:ro
+      - ./_docker/mysql/my.cnf:/etc/mysql/conf.d/custom.cnf:ro
+      - ./_docker/logs/mysql:/var/log/mysql:delegated
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+
+  mcms-memcache:
+    image:
+      memcached
+    container_name:
+      mcms-memcache
+    networks:
+      mcms-net:
+        aliases:
+          - "memcache"
+    ports:
+      - 11211:11211
+
+  mcms-clickhouse:
+    image:
+      yandex/clickhouse-server
+    container_name:
+      mcms-clickhouse
+    networks:
+      mcms-net:
+        aliases:
+          - "clickhouse"
+    ports:
+      - 8123:8123
+      - 9004:9004
+    volumes:
+      - click-data:/var/lib/clickhouse
+      - ./_docker/clickhouse/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:cached
+      - ./_docker/clickhouse/config.d/mysql_interface.xml:/etc/clickhouse-server/config.d/mysql_interface.xml:cached
+      - ./_docker/logs/clickhouse:/var/log/clickhouse-server:delegated
+
+  mcms-rabbitmq:
+    image:
+      rabbitmq:3
+    #  dockerhub.wapdev.org/rabbitmq
+    container_name:
+      mcms-rabbitmq
+    networks:
+      mcms-net:
+        aliases:
+          - "rabbitmq"
+    ports:
+      - 15672:15672
+      - 5672:5672
+      - 5692:5692

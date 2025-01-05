@@ -1,0 +1,23 @@
+<?php
+return [
+  'notification_creation_user' => 'User',
+  'notification_creation_header' => 'Header',
+  'notification_creation_message' => 'Message',
+  'notification_creation_template' => 'Message',
+  'notification_creation_fromModule' => 'Event type',
+  'notification_creation_roles' => 'Roles',
+  'notification_creation_notificationType' => 'Notification type',
+  'notification_creation_isImportant' => 'Is important',
+  'notification_creation_isNews' => 'Is news',
+  'notification_creation_isDisabled' => 'Is disabled',
+  'notification_creation_isSystem' => 'Is system',
+  'notification_creation_isReplace' => 'Replace the previous notification',
+  'notification_creation_isReplace_hint' => 'Replace the previous browser-based notification of the same type, if it is not read, otherwise create a new',
+  'notification_creation_isSend' => 'Is send',
+  'notification_creation_from' => 'From',
+  'emails_hint' => 'Email addresses must be separated by comma',
+  'notification_creation_created' => 'Date of creation',
+  'notification_creation_updated' => 'Date of updating',
+  'notification_creation_viewed' => 'Viewed',
+  'notification_creation_manual' => 'Manual',
+];

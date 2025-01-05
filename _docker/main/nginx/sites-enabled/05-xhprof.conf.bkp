@@ -1,0 +1,32 @@
+server {
+    set $project_root /var/www/mcms-api-handler;
+    set $fcgi_server fpm:9000;
+
+    charset utf-8;
+    client_max_body_size 128M;
+
+    listen 80;
+
+    server_name xhprof.lc;
+    root $project_root/vendor/lox/xhprof/xhprof_html;
+    index index.php;
+
+    access_log  off;
+    error_log  /dev/stdout;
+
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
+    location ~ /\.(ht|svn|git) {
+        deny all;
+    }
+
+    location ~ \.php$ {
+        try_files      $uri =404;
+        fastcgi_pass   $fcgi_server;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}

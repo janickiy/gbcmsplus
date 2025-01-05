@@ -1,0 +1,46 @@
+#landing_image {
+    float: left;
+    max-width: 200px;
+    max-height: 250px;
+    margin: 0 20px 20px 0;
+}
+#landing_description {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#landing_detail_view th,
+#landing_detail_view td
+{
+    padding: 3px;
+    font-size: 12px;
+}
+#landing_operators_table {
+    font-size: 12px;
+    overflow-x: auto;
+}
+#landing_description_label {
+    font-weight: bold;
+    width: 100%;
+}
+.converted_price {
+    color: #aaaaaa;
+}
+#currencies_exchange
+{
+    text-align: center;
+    padding: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+#operator_th {
+    width: 140px;
+}
+.bold_label {
+    font-weight: bold;
+}
+#forbiddenTrafficTypes_wrap {
+    margin: 10px 0;
+}
+#landing_operators_table_wrap {
+    overflow: auto;
+}

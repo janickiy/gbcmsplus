@@ -1,0 +1,1 @@
+INSERT INTO `page_category_prop_entities` VALUES (1,'arbitrary','a:2:{s:2:\"ru\";s:22:\"Арбиражника\";s:2:\"en\";s:9:\"Arbitrary\";}',1),(2,'webmaster','a:2:{s:2:\"ru\";s:31:\"Владельца сайтов\";s:2:\"en\";s:9:\"Webmaster\";}',1);

@@ -1,0 +1,125 @@
+body{
+	margin:0;
+	color:#000;
+	font: 14px Roboto, sans-serif;
+	background-image: url(/img/maintenance/rgktools/back4.svg);
+    background-color: #F8F9F9;
+	min-width:320px;
+	overflow-x: hidden;
+	height: 100%;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:none;
+}
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 100%;
+	font-size: 14px;
+}
+*, *:before, *:after{
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+	-moz-box-sizing: inherit;
+}
+*{max-height: 1000000px; outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary{display: block;}
+img{
+	border-style:none;
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+a {
+	text-decoration: underline;
+	color: inherit;
+	outline:none;
+}
+input,
+textarea,
+select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color: inherit;
+}
+textarea{
+	overflow:auto;
+	resize:vertical;
+	vertical-align:top;
+	outline:none;
+}
+form, fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner{
+	padding:0;
+	border:0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+input[type="search"]{-webkit-appearance: none;}
+input[type="search"]::-webkit-search-cancel-button{-webkit-appearance: none;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+sub,
+sup{
+	font-size:75%;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.e-page {
+	padding-top: 15vh;
+}
+
+.e-logo {
+	margin: 0 auto 2.3rem;
+	text-align: center;
+}
+
+.e-popup {
+	width: 95%;
+	max-width: 27rem;
+	margin: 0 auto;
+	display: block;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+.e-popup__text {
+	color: #6A6969;
+	font-size: .85rem;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+
+.e-popup__text2 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+@media (min-width: 500px) and (min-height: 600px) {
+	html { font-size: 28px; }
+	.e-popup {
+		padding: 1.4rem 1rem;
+	}
+}

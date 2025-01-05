@@ -1,0 +1,22 @@
+<?php
+return [
+    'main' => 'Промо',
+    'currencies' => 'Валюты',
+    'countries' => 'Страны',
+    'operators' => 'Операторы',
+    'providers' => 'Провайдеры',
+    'trafficback_providers' => 'Провайдеры для ТБ',
+    'offer_categories' => 'Категории офферов',
+    'landing_categories' => 'Категории лендингов',
+    'landings' => 'Лендинги',
+    'landing_sets' => 'Наборы лендингов',
+    'landing_unblock_requests' => 'Разблокировка лендингов',
+    'domains' => 'Домены',
+    'references' => 'Справочники',
+    'banners' => 'Баннеры',
+    'partner_programs' => 'Партнерские программы',
+    'landing_update' => 'Редактирование лендинга',
+    'arbitrary_source_update' => 'Редактирование ссылки',
+    'webmaster_source_update' => 'Редактирование источника',
+    'correct_conditions' => 'Коррекция подписок',
+];

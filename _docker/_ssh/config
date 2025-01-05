@@ -1,0 +1,3 @@
+Host git.wapdev.org
+Preferredauthentications publickey
+IdentityFile ~/.ssh/git.key

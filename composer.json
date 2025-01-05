@@ -1,0 +1,102 @@
+{
+  "name": "rgkgroup/modulecms",
+  "description": "rgkgroup modulecms",
+  "type": "project",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1.0",
+    "yiisoft/yii2": "2.0.35",
+    "yiisoft/yii2-bootstrap": "~2.0.8",
+    "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+    "yiisoft/yii2-jui": "^2.0",
+    "yiisoft/yii2-httpclient": "^2.0",
+    "mdmsoft/yii2-admin": "2.2",
+    "vova07/yii2-imperavi-widget": "*",
+    "wbraganca/yii2-dynamicform": "2.0.2",
+    "yii-dream-team/yii2-upload-behavior": "*",
+    "branchonline/yii2-lightbox": "*",
+    "2amigos/yii2-file-upload-widget": "~1.0",
+    "ercling/yii2-loadingindicator": "*",
+    "bower-asset/js-cookie": "^2.1",
+    "baibaratsky/php-webmoney": "~0.14.0",
+    "kop/yii2-scroll-pager": "dev-master",
+    "hakimel/ladda": "dev-master#411b0eb32b6fa400619bdba86d893eca201c824e",
+    "vova07/yii2-fileapi-widget": "*",
+    "cakebake/yii2-bootstrap-select": "*",
+    "bower-asset/jquery.dirtyforms": "^2.0",
+    "conquer/codemirror": "2.0",
+    "himiklab/yii2-recaptcha-widget": "*",
+    "fortawesome/font-awesome": "^4.6",
+    "wbraganca/yii2-fancytree-widget": "1.0.1",
+    "rgk/changelog": "1.1.*",
+    "rgk/theme": "1.1.*",
+    "rgk/queue": "2.*",
+    "rgk/payprocess": "1.3.*",
+    "paypal/rest-api-sdk-php": "^1.11",
+    "sentry/sentry": "1.7.1",
+    "notamedia/yii2-sentry": "1.3.0",
+    "rgk/utils": "1.7.*",
+    "rgk/settings": "1.0.*",
+    "rgk/exchange": "1.0.*",
+    "rgk/yii2-export": "dev-master",
+    "lox/xhprof": "dev-master",
+    "yandex-money/yandex-money-sdk-php": "dev-master",
+    "kartik-v/yii2-tabs-x": "^1.2@dev",
+    "kartik-v/yii2-datecontrol": "^1.9@dev",
+    "kartik-v/yii2-widgets": "^1.0@dev",
+    "kartik-v/yii2-field-range": "^1.3@dev",
+    "kartik-v/yii2-date-range": "^1.7@dev",
+    "kartik-v/yii2-nav-x": "^1.2@dev",
+    "kartik-v/yii2-editable": "^1.7@dev",
+    "kartik-v/yii2-sortable-input": "^1.2@dev",
+    "kartik-v/yii2-markdown": "^1.3@dev",
+    "kartik-v/yii2-mpdf": "^1.0@dev",
+    "kartik-v/yii2-builder": "^1.6@dev",
+    "kartik-v/yii2-widget-datepicker": "^1.4@dev",
+    "2amigos/yii2-tinymce-widget": "~1.1",
+    "tinymce/tinymce": "*",
+    "rgk/geoservice_client": "dev-master",
+    "kak/clickhouse": "dev-master",
+    "bestyii/yii2-openapi-reader": "dev-master",
+    "bestyii/yii2-gii-rest": "dev-master",
+    "sizeg/yii2-jwt": "dev-master"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "*",
+    "yiisoft/yii2-gii": "*",
+    "yiisoft/yii2-faker": "*",
+    "squizlabs/php_codesniffer": "2.*",
+    "phpmd/phpmd": "@stable",
+    "codeception/codeception": "^4.2@beta",
+    "flow/jsonpath": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/baibaratsky/yandex-money-sdk-php.git"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "hakimel/Ladda",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/hakimel/ladda",
+          "type": "git",
+          "reference": "origin/master"
+        }
+      }
+    }
+  ],
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "mcms\\": "submodules/"
+    }
+  }
+}

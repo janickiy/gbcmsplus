@@ -1,0 +1,21 @@
+<?php
+return [
+  'trans_id' => 'Trans Id',
+  'source_id' => 'Источник',
+  'type' => 'Тип',
+  'status' => 'Статус',
+  'errors' => 'Ошибки',
+  'status_code' => 'Код ответа',
+  'url' => 'Url',
+  'data' => 'Данные',
+  'time' => 'Дата создания',
+  'type-subscription' => 'Подписка',
+  'type-subscription_rebill' => 'Ребилл',
+  'type-subscription_off' => 'Отписка',
+  'type-sold_subscription' => 'Проданная подписка',
+  'type-onetime_subscription' => 'Единоразовая подписка',
+  'type-complain' => 'Жалоба',
+  'status_ok' => 'Ok',
+  'status_error' => 'Ошибка',
+  'userId' => 'Партнер',
+];

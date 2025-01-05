@@ -1,0 +1,23 @@
+<?php
+return [
+  'main' => 'Категории лендингов',
+  'create' => 'Добавить категорию',
+  'list' => 'Список категорий',
+  'update' => 'Редактировать категорию',
+  'view' => 'Просмотр категории',
+  'attribute-id' => 'ID',
+  'attribute-code' => 'Код',
+  'attribute-name' => 'Наименование',
+  'attribute-status' => 'Статус',
+  'attribute-alter_categories' => 'Альтернативные категории',
+  'attribute-created_at' => 'Дата создания',
+  'attribute-updated_at' => 'Дата изменения',
+  'attribute-created_by' => 'Кем создано',
+  'attribute-tb_url' => 'Trafficback URL',
+  'attribute-click_n_confirm_text' => 'Confirm-текст у формата рекламы Click&Confirm',
+  'attribute-is_not_mainstream' => 'Не мейнстрим',
+  'status-active' => 'Активно',
+  'status-inactive' => 'Неактивно',
+  'add-category' => 'Добавить категорию',
+  'error-same-category' => 'Нельзя добавлять категорию себе в альтернативные категории',
+];

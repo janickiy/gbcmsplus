@@ -1,0 +1,6 @@
+main-local.php
+params-local.php
+db-local.php
+sdb-local.php
+db-columnstore-local.php
+db-clickhouse-local.php

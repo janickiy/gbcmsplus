@@ -1,0 +1,159 @@
+.footer {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 72px;
+	padding-right: 35px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	/* min-width: 1200px; */
+
+	h5 {
+		margin-bottom: 20px;
+
+		@media (max-width: 1400px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&-links {
+		width: 480px;
+		margin-right: 40px;
+		display: inline-block;
+		vertical-align: middle;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		
+		@media (max-width: 1400px) {
+			width: 400px;
+		}
+		@media (max-width: 1270px) {
+			margin-right: 20px;
+		}
+		@media (max-width: 786px) {
+			width: 100%!important;
+			margin-right: 0;
+			display: none;
+
+			&.vis {
+				display: block;
+			}
+		}
+	}
+	&-link {
+		margin-bottom: 10px;
+		display: inline-block;
+		margin-right: 30px;
+		min-width: 200px;
+		a {
+			color: #606060;
+			font-weight: 300;
+		}
+
+		i {
+			font-size: 18px;
+			vertical-align: middle;
+			margin-right: 5px;
+			color: #868685;
+			@include transition(color .3s);
+		}
+
+		&:hover {
+			i {
+				color: darken(#868685, 20%);
+			}
+			
+		}
+
+		@media (max-width: 786px) {
+			text-align: center;
+			min-width: 100%;
+			display: block;
+		}
+		@media (min-width: 1000px) and (max-width: 1400px) {
+			min-width: 180px;
+			margin-right: 10px;
+			margin-bottom: 7px;
+			a{
+				font-size: 13px;
+			}
+
+			i {
+				font-size: 16px;
+			}
+
+		}
+	}
+	.copy {
+		display: inline-block;
+		padding-top: 70px;
+		color: #606060;
+	}
+	@media (max-width: 1200px) {
+		position: static;
+		padding-left: 15px;
+		margin-bottom: 0;
+		padding-bottom: 15px;
+
+		.col-xs-10 {
+			width: 100%;
+		}
+		.col-xs-2{
+			width: 100%;
+			text-align: center;
+			.copy {
+				padding-top: 40px;
+			}
+		}
+	}
+	@media (max-width: 1000px) {
+		.col-xs-6, .col-xs-5, .col-xs-7 {
+			width: 100%;
+		}
+		.footer-links {
+			width: auto;
+			white-space: nowrap;
+		}
+	}
+	@media (max-width: 786px) {
+		h5 {
+			display: none;
+		}
+		padding-right: 15px!important;
+		
+		.col-xs-2 {
+			border-top: 1px solid #D2D2D1;
+			margin-top: 5px;
+		}
+		.copy {
+			padding-top: 15px!important;
+
+		}
+	}
+}
+
+.mobile__contacts {
+	display: none;
+
+	@media (max-width: 786px) {
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+
+		span {
+			display: inline-block;
+			
+			border-radius: 5px;
+			line-height: 26px;
+			padding: 0 8px;
+			margin: 0 3px;
+
+			&.active {
+				background-color: #fff;
+			}
+		}
+	}
+}

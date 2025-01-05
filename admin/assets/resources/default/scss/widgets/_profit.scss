@@ -1,0 +1,23 @@
+.profit {
+  display: block;
+  
+  canvas {
+    min-height: 440px!important;
+    
+    @media (max-width: 1700px) {
+      min-height: 400px!important;
+    }
+    
+    @media (max-width: 1500px) {
+      min-height: 360px!important;
+    }
+    
+    @media (max-width: 1300px) {
+      min-height: 320px!important;
+    }
+    
+    @media (max-width: 500px) {
+      min-height: 200px!important;
+    }
+  }
+}

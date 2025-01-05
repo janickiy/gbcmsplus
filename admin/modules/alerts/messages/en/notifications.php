@@ -1,0 +1,21 @@
+<?php
+return [
+    'more' => 'grown',
+    'less' => 'dropped',
+    'all-time' => 'during all the time',
+    'for-day' => 'during {day}',
+    'for-day-hour' => 'during {hour} hour {day}',
+    'message' => 'Value {metricName} was {direction} by {deviation} ({percentDeviation} %) {interval}',
+    'message-field' => 'Message',
+    'read_by-field' => 'Read by',
+    'event_id-field' => 'Rool id',
+    'event_name' => 'Event name',
+    'metric' => 'Name of the metric',
+    'more_or_less' => 'Value has become less or more',
+    'value' => 'Value of deviation',
+    'minutes' => 'Number of minutes',
+    'filters' => 'Filters',
+    'empty-filters' => 'Filters are empty',
+    'compared-value' => 'Reference value',
+    'current-value' => 'Current value',
+];

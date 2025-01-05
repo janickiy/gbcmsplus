@@ -1,0 +1,8 @@
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (9, 4, 'logo', 'a:2:{s:2:"ru";s:14:"Логотип";s:2:"en";s:4:"Logo";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (38, 1, 'page_title', 'a:2:{s:2:"ru";s:5:"Title";s:2:"en";s:5:"Title";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (64, 1, 'copyright_url', 'a:2:{s:2:"ru";s:39:"Адрес ссылки в футере";s:2:"en";s:13:"Copyright URL";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (65, 1, 'copyright_text', 'a:2:{s:2:"ru";s:39:"Текст ссылки в футере";s:2:"en";s:14:"Copyright text";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (66, 1, 'login_title', 'a:2:{s:2:"ru";s:47:"Заголовок "Вход в кабинет"";s:2:"en";s:27:"Text "Login to the cabinet"";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (67, 1, 'no_account', 'a:2:{s:2:"ru";s:37:"Текст "Нет аккаунта?"";s:2:"en";s:18:"Text "No account?"";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (68, 1, 'register', 'a:2:{s:2:"ru";s:48:"Текст "Зарегистрируйтесь!"";s:2:"en";s:16:"Text "Register!"";}', 1, 0);
+INSERT INTO `page_category_props` (`id`, `type`, `code`, `name`, `page_category_id`, `is_multivalue`) VALUES (69, 1, 'register_title', 'a:2:{s:2:"ru";s:43:"Заголовок "Регистрация"";s:2:"en";s:20:"Title "Registration"";}', 1, 0);

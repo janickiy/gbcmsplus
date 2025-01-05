@@ -1,0 +1,23 @@
+<?php
+return [
+  'main' => 'Landing categories',
+  'create' => 'Create category',
+  'list' => 'Categories list',
+  'update' => 'Edit category',
+  'view' => 'View category',
+  'attribute-id' => 'ID',
+  'attribute-code' => 'Code',
+  'attribute-name' => 'Title',
+  'attribute-status' => 'Status',
+  'attribute-alter_categories' => 'Alternative Categories',
+  'attribute-created_at' => 'Created at',
+  'attribute-updated_at' => 'Updated at',
+  'attribute-created_by' => 'Created by',
+  'attribute-tb_url' => 'TrafficBack URL',
+  'attribute-click_n_confirm_text' => 'Confirm-text placed at Click&Confirm ads type',
+  'attribute-is_not_mainstream' => 'Not mainstream',
+  'status-active' => 'Active',
+  'status-inactive' => 'Inactive',
+  'add-category' => 'Add category',
+  'error-same-category' => 'Category can not be added to alternative categories to itself',
+];

@@ -1,0 +1,28 @@
+.complex-filter-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.complex-filter-colapse-submenu {
+  margin-left: 15px;
+}
+.complex-filter-submenu-link {
+  border-bottom: 1px dotted #ccc;
+}
+.complex-filter-label {
+  cursor: pointer;
+}
+.complex-filter-expand {
+  display: none;
+}
+.complex-filter-widget, .complex-filter-dropdown-toggle {
+  width: 200px;
+}
+.complex-filter-row-checked {
+  background-color: lightgoldenrodyellow;
+}

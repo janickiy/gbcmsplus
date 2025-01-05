@@ -1,0 +1,7 @@
+<svg fill="none" version="1.1" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+    <g clip-rule="evenodd" fill-rule="evenodd">
+        <path d="M0 0h22v22H0V0Z" fill="#EDEDED" />
+        <path d="M0 7.335h22V22H0V7.335Z" fill="#0039A6" />
+        <path d="M0 14.665h22V22H0v-7.335Z" fill="#D52B1E" />
+    </g>
+</svg>

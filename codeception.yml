@@ -1,0 +1,15 @@
+include:
+  - ./mcms-api-handler
+  - ./submodules/mcms/user
+  - ./submodules/mcms/promo
+  - ./submodules/mcms/statistic
+  - ./submodules/mcms/payments
+  - ./submodules/mcms/common
+  - ./submodules/mcms/pages
+  - ./site/modules/v3
+paths:
+  log: tests/_output
+
+settings:
+  colors: true
+

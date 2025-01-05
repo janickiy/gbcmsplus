@@ -1,0 +1,28 @@
+class_name: ApiTester
+
+modules:
+    enabled:
+        - Yii2
+        - \mcms\statistic\tests\Helper\Api
+        - \mcms\statistic\tests\Helper\FixtureHelper
+        - PhpBrowser:
+            url: http://modulecms-test.lc
+        - REST:
+            url: http://modulecms-test.lc/api/v1/
+            depends: PhpBrowser
+    config:
+      Yii2:
+        configFile: '../../../tests/config/web/main.php'
+env:
+    dev:
+        modules:
+            enabled:
+                - Yii2
+                - PhpBrowser:
+                    url: http://test.resellers.rgk
+                - REST:
+                    url: http://test.resellers.rgk/api/v1/
+                    depends: PhpBrowser
+            config:
+              Yii2:
+                configFile: '../../../tests/config/web/main.php'

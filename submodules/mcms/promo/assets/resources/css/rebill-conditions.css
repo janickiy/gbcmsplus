@@ -1,0 +1,6 @@
+#create_rebill_conditions_button_wrap {
+  margin: 10px 0
+}
+#rebillConditionsForm .error-summary li:empty {
+  display: none;
+}

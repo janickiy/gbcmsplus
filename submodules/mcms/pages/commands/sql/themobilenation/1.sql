@@ -1,0 +1,2 @@
+INSERT INTO `page_categories` (`id`, `code`, `name`, `is_index_visible`, `is_url_visible`, `is_seo_visible`, `created_at`, `updated_at`) VALUES (1, 'common', 'a:2:{s:2:"ru";s:10:"Общее";s:2:"en";s:6:"Common";}', 0, 0, 0, 1456750992, 1456993442);
+INSERT INTO `page_categories` (`id`, `code`, `name`, `is_index_visible`, `is_url_visible`, `is_seo_visible`, `created_at`, `updated_at`) VALUES (19, 'lang_select', 'a:2:{s:2:"ru";s:21:"Выбор языка";s:2:"en";s:18:"Language selection";}', 0, 0, 0, 1477321782, 1510153861);
